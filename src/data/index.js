@@ -5,7 +5,10 @@
 import info from './000-info';
 import education from './001-education';
 import experience from './002-experience';
-
+import publications from './003-publications';
+import awards from './004-awards';
+import projects from './006-projects';
+import skills from './007-skills';
 export default {
   info: {
     ...info,
@@ -13,5 +16,9 @@ export default {
     legalName: `${info.firstName} ${info.lastName}`
   },
   education,
-  experience
+  experience,
+  publications,
+  awards,
+  projects,
+  skills
 }

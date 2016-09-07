@@ -46,6 +46,21 @@ Utilizing data mining (with Hadoop and Python) to improve malware detection effi
 - Implemented a decision tree executor for detecting malware using file features that replaced Symantec's existing implementation.
 `,
     featured: true
+  }, {
+    title: "Technical Lead",
+    company: "Lanzhong Inc.",
+    companyLink: "https://www.lintcode.com/",
+    location: "Beijing, China",
+    startDate: "Jan. 2014",
+    endDate: null,
+    notes: `
+Technical lead in an online education startup.
+
+- Lead developer of a CMS for online education.
+- Built email marketing system sending 100k+ emails per month.
+- Maintained and updated internal infrastructure across multiple applications and distributed services including celery and memcached.
+`,
+    featured: true
   }
 
 ];

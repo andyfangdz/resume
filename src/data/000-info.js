@@ -7,6 +7,8 @@ export default {
   preferredName: "Andy",
   email: "dezhifang@gatech.edu",
   location: "Atlanta, GA",
+  phone: "404-771-8694",
+  position: "Software Engineer",
   pastLocations: ["Urumqi, China"],
-  website: "https://andyfang.me"
+  website: "https://andyfang.me",
 }

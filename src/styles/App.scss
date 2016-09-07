@@ -1,0 +1,207 @@
+@import "markdown-github.css";
+
+$primary-color: #E6A92F;
+$secondary-color: rgba(0, 64, 110, 1);
+
+$item-name-font-size: 1.5em;
+$item-inner-spacing: 0.3em;
+$item-horizontal-padding: 0.3em;
+
+$primary-font-size: 1em;
+$secondary-font-size: 0.8em;
+$notes-font-size: 0.7em;
+
+body {
+  background: #eee;
+}
+
+.cv-page {
+  background: white;
+  display: block;
+  margin: 0.5cm auto 0.5cm;
+  box-shadow: 0 1px 0 0 #ffffff inset, 0 1px 2px 0 #B3B3B3;
+  max-width: 21cm;
+  box-sizing: border-box;
+  padding-left: 0.5cm;
+  padding-right: 0.5cm;
+  padding-top: 0.5cm;
+  height: 29.7cm;
+}
+
+.cv-page > header > h1 {
+  margin-top: 0;
+}
+
+.section-header {
+  //color: $primary-color;
+  font-size: 1.3em;
+  line-height: 1em;
+  color: $secondary-color;
+  border-bottom: solid $secondary-color 2px;
+  padding-left: $item-horizontal-padding;
+  padding-right: $item-horizontal-padding;
+}
+
+.cv-page header div {
+  vertical-align: bottom;
+}
+.cv-page header div .info {
+  display: inline-block;
+  color: $secondary-color;
+  vertical-align: bottom;
+  margin-bottom: 0;
+  margin-left: 1em;
+}
+
+.cv-page header div .info a {
+  color: $secondary-color !important;
+}
+
+.cv-page {
+  position: relative;
+  z-index: 0;
+}
+
+.cv-page > section {
+  margin-top: $item-inner-spacing;
+}
+
+.cv-page header h1 {
+  display: inline-block;
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+.school-seal {
+  position: absolute;
+  top: 2em;
+  right: 2em;
+  height: 20em;
+  z-index: -1;
+  opacity: 0.2;
+}
+
+.item {
+  position: relative;
+  margin-top: 0.5em;
+  padding-left: $item-horizontal-padding;
+  padding-right: $item-horizontal-padding;
+}
+
+.item > .name {
+  margin-top: 0;
+  margin-bottom: 0;
+  font-size: $primary-font-size;
+}
+
+.item > .date {
+  position: absolute;
+  right: $item-horizontal-padding;
+  top: 0;
+  line-height: 1.5em;
+  font-size: $secondary-font-size;
+}
+
+.item > .notes {
+  margin-top: 0;
+  margin-bottom: 0;
+  font-size: $notes-font-size;
+}
+
+.item > .notes * {
+  margin-top: 0;
+  margin-bottom: 0;
+  line-height: 1.2em;
+}
+
+.item > .notes > ul > li {
+  margin-top: 0;
+}
+
+.cv-page a {
+  color: $primary-color;
+}
+
+/* Experiences */
+.experience-item .experience-company.company, .experience-location.location{
+  margin-top: 0;
+  display: inline-block;
+  font-size: $secondary-font-size;
+  line-height: $secondary-font-size;
+  font-weight: normal;
+  margin-bottom: 0;
+}
+
+.meta-row {
+  line-height: 0.7em;
+}
+
+.experience-item .experience-company {
+  margin-right: 0.5em;
+}
+
+.publication-item .name {
+  font-weight: normal;
+  font-size: 0.9em;
+}
+
+.publication-item .publication-authors {
+  font-size: 0.8em;
+  margin-bottom: 0;
+}
+
+.publication-item .publication-authors a {
+  color: black;
+}
+
+.publication-item .publication-authors a.publication-me {
+  color: $primary-color;
+  text-decoration: underline;
+}
+
+.publication-item .publication-venue {
+  font-size: 0.7em;
+  margin-bottom: 0;
+  font-style: italic;
+}
+
+p.award-awarded-by {
+  font-size: 0.8em;
+  margin-bottom: 0;
+}
+
+.skill .section-header {
+  margin-bottom: 0.5em;
+}
+.skill-item {
+  margin-top: 0;
+}
+
+.skill-item > p {
+  font-size: 0.8em;
+  margin-bottom: 0;
+}
+span.bold {
+  font-weight: bold;
+}
+
+/* Print Styling */
+@page {
+  margin: 0;
+}
+
+@media print {
+  body {
+    margin: 0;
+    padding: 0;
+  }
+
+  .cv-page {
+    border: none;
+    box-shadow: none;
+  }
+
+  .hide-print {
+    display: none;
+  }
+}

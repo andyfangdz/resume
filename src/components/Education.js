@@ -14,10 +14,10 @@ export default class Education extends Component {
 
   render() {
     return (
-      <section className="education-item">
-        <h3 className="education-name">{this.props.name}</h3>
-        <div className="education-date">{this.getDate()}</div>
-        <ReactMarkdown className="education-notes" source={this.props.notes}/>
+      <section className="education-item item">
+        <h3 className="education-name name">{this.props.name}</h3>
+        <div className="education-date date">{this.getDate()}</div>
+        <ReactMarkdown className="education-notes notes markdown-body" source={this.props.notes}/>
       </section>
     );
   }
