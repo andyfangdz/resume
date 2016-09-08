@@ -10,13 +10,14 @@ import Award from './components/Award';
 import Project from './components/Project';
 import SkillGroup from './components/SkillGroup';
 import cvData from './data';
+import classNames from 'classnames';
 
 function getListOf(component, dataArray, featured=false) {
   dataArray = featured ? dataArray.filter((e) => e.featured) : dataArray;
   return dataArray.map((e, i) => React.createElement(component, {...e, key: i}));
 }
 
-class App extends Component {
+class CV extends Component {
 
   selectify = (title) => {
     if (this.props.featured) {
@@ -27,7 +28,7 @@ class App extends Component {
 
   render() {
     return (
-      <article className="cv-page">
+      <article className={classNames('cv-page', { resume: this.props.featured })}>
         <header>
           <div>
             <h1>{cvData.info.fullName}</h1>
@@ -35,7 +36,10 @@ class App extends Component {
               {cvData.info.phone} · {cvData.info.email} · {cvData.info.location}<br />
               Full CV available at: <a href={cvData.info.website}>{cvData.info.website}</a> · {cvData.info.position}
             </p>
-            <img className="school-seal" src="https://upload.wikimedia.org/wikipedia/commons/f/fd/GeorgiaTechSeal.svg" />
+            <img className="school-seal"
+                 src={cvData.info.seal}
+                 role="presentation"
+            />
           </div>
 
         </header>
@@ -71,4 +75,9 @@ class App extends Component {
   }
 }
 
-export default App;
+CV.defaultProps = {featured: false};
+
+let Resume = () => <CV featured={true} />;
+
+
+export {Resume, CV};

@@ -11,6 +11,9 @@ $primary-font-size: 1em;
 $secondary-font-size: 0.8em;
 $notes-font-size: 0.7em;
 
+$paper-width: 8.5in;
+$paper-height: 11in;
+
 body {
   background: #eee;
 }
@@ -20,12 +23,14 @@ body {
   display: block;
   margin: 0.5cm auto 0.5cm;
   box-shadow: 0 1px 0 0 #ffffff inset, 0 1px 2px 0 #B3B3B3;
-  max-width: 21cm;
+  max-width: $paper-width;
   box-sizing: border-box;
-  padding-left: 0.5cm;
-  padding-right: 0.5cm;
-  padding-top: 0.5cm;
-  height: 29.7cm;
+  padding: 0.5cm;
+}
+
+.cv-page.resume {
+  height: $paper-height;
+  padding-bottom: 0;
 }
 
 .cv-page > header > h1 {
@@ -83,7 +88,7 @@ body {
 
 .item {
   position: relative;
-  margin-top: 0.5em;
+  margin-top: 0.25em;
   padding-left: $item-horizontal-padding;
   padding-right: $item-horizontal-padding;
 }
@@ -199,6 +204,10 @@ span.bold {
   .cv-page {
     border: none;
     box-shadow: none;
+    margin: 0;
+    height: $paper-height;
+    width: $paper-width;
+    overflow: hidden;
   }
 
   .hide-print {

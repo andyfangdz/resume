@@ -5,7 +5,7 @@ export default [{
   title: "django-asyncmailer",
   notes: `
 - An async email sending solution with load balancing and routing among multiple SMTP credentials
-- Now sending 50k+ emails per month with a delivery rate of more than 98%
+- Now sending 100k+ emails per month with a delivery rate of more than 98%
 `,
   date: "Sep. 2015",
   featured: true

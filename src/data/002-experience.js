@@ -49,7 +49,7 @@ Utilizing data mining (with Hadoop and Python) to improve malware detection effi
   }, {
     title: "Technical Lead",
     company: "Lanzhong Inc.",
-    companyLink: "https://www.lintcode.com/",
+    companyLink: "http://www.codevs.cn/",
     location: "Beijing, China",
     startDate: "Jan. 2014",
     endDate: null,
@@ -61,6 +61,20 @@ Technical lead in an online education startup.
 - Maintained and updated internal infrastructure across multiple applications and distributed services including celery and memcached.
 `,
     featured: true
+  }, {
+    title: "Software Engineer",
+    company: "InitialView",
+    companyLink: "http://initialview.com",
+    location: "Beijing, China",
+    startDate: "Dec. 2014",
+    endDate: "Sep. 2015",
+    notes: `
+Full-stack software engineer
+- Sole developer of claryfy.com, a web forum for international students built with Django and PostgreSQL
+- Built front-end of InitialView's Interview Booking System
+- Built front-end of InitialView Interview Player
+`,
+    featured: false
   }
 
 ];
