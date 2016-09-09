@@ -1,0 +1,14 @@
+language: node_js
+node_js:
+- 6
+script: ./deploy.sh
+deploy:
+  provider: surge
+  project: "./build/"
+  domain: cv-dev.andyfang.me
+  skip_cleanup: true
+env:
+  global:
+    - SURGE_LOGIN=andyfang.dz@gmail.com
+  matrix:
+    secure: mERC4icF1dXkcosuBTHSUkn1rCuVkikcPKjkaasIUFhoBJnc2nVjZ40frU9q2mHxN8QIHcE4NDxKetoCI1GQ2BIZ1zd76zLiFJX5HOIN7NazCTrDgutJFl4UEnR2SbkNeoFPSzDO8nXdVeERl/cMN7QrvEdPTzCpQCqFcoXkUnQZE8p9X6y/lssTh7fzgZLO68HizT1wT1FCrUWBrtzeqI3uWme9ksSyBjxdcym7fnw83WOvucHbickDAYt4HuDhgCmMgByNKkItIV4IMBhYOSEJJep8awLdw8tjEVX3/tfsuiYgSXND2vk4xQQLT7fTFbrauUBO5aQoceHxTCT4OyOS9UzHsp572FOUnM3XbTXBjUYqDfbFPGwhV0TLh5t3vz0AEoiWq31DxHaU7jemurHemzlySiwU/BnW9IiJC3+HHdpfYO+/ea3blgsG3+q4NDzQ9kqz22BuMvmi1YA8tsxLmaK6ueNWOVVGOkdFzujSOh6IEzkwUZm9xlpXdY47LDSGkdPXfmReKUPVHBBtpQKqS4UekkJyxcJM26nVChTlRJ0rq+YpEodG9z6mRCYOLPQEen6esyIIvYTTivhBBUOf2Ntn1d+maAt2r0+3dJBwMYcifNH7HrRd8YT9UHHqjvdcExqWDHeeJ83NQS7xJK3ZoANyUNSUjbGR0iuNm5Y=

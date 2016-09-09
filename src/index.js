@@ -82,10 +82,9 @@ if (typeof document !== 'undefined') {
       <Route path="/resume" component={App} featured={true}/>
       <Route path="*" component={App} featured={false}/>
     </Router>,
+    // <App route={{featured:false}} />,
     document.getElementById('root')
   );
 } else {
-  module.exports = function render(locals, callback) {
-    callback(null, '<html>' + locals.greet + ' from ' + locals.path + '</html>');
-  };
+  console.log(ReactDOMServer.renderToString(<App route={{featured:false}} />));
 }
