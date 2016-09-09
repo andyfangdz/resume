@@ -5,8 +5,6 @@ import React, {Component} from 'react';
 
 import authors from '../data/meta/authors';
 
-console.log(authors);
-
 export default class Publication extends Component {
 
   getLinks = () => {

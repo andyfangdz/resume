@@ -1,11 +1,13 @@
-os: osx
+language: node_js
 node_js:
 - 6
-before_install:
-  - brew update
+addons:
+  apt:
+    packages:
+      - xvfb
 install:
-  - brew install nvm
-  - nvm install 6
+  - export DISPLAY=':99.0'
+  - Xvfb :99 -screen 0 1024x768x24 > /dev/null 2>&1 &
   - npm install
 script: ./deploy.sh
 deploy:

@@ -65,6 +65,14 @@ class App extends Component {
                 onTouchTap={() => {print()}}
                 icon={<FontIcon className="material-icons">print</FontIcon>}
               />
+              <RaisedButton
+                label="PDF"
+                fullWidth={true}
+                secondary={true}
+                style={{marginTop: "0.2em"}}
+                onTouchTap={() => {window.location = this.state.featured ? '/resume.pdf' : '/cv.pdf'}}
+                icon={<FontIcon className="material-icons">file_download</FontIcon>}
+              />
 
             </Paper>
           </aside>
