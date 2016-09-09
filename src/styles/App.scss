@@ -190,8 +190,21 @@ span.bold {
   font-weight: bold;
 }
 
+.toolbar {
+  position: absolute;
+  right: calc((100vw - #{$paper-width}) / 2 - 11em);
+  width: 10em;
+  max-width: calc((100vw - #{$paper-width}) / 2 - 2em);
+  box-sizing: border-box;
+}
+
+.toolbar .toolbar-paper {
+  padding: 0.5em;
+}
+
 /* Print Styling */
 @page {
+  size: letter;
   margin: 0;
 }
 
@@ -205,12 +218,24 @@ span.bold {
     border: none;
     box-shadow: none;
     margin: 0;
-    height: $paper-height;
+
     width: $paper-width;
     overflow: hidden;
   }
 
   .hide-print {
+    display: none;
+  }
+
+  .toolbar {
+    display: none;
+  }
+
+  .cv-page.resume {
+    height: $paper-height;
+  }
+
+  .toolbar {
     display: none;
   }
 }

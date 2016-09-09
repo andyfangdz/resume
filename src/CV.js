@@ -1,4 +1,4 @@
-import React, { Component } from 'react';
+import React, {Component} from 'react';
 import './styles/App.scss';
 
 import SectionHeader from './components/SectionHeader';
@@ -12,7 +12,7 @@ import SkillGroup from './components/SkillGroup';
 import cvData from './data';
 import classNames from 'classnames';
 
-function getListOf(component, dataArray, featured=false) {
+function getListOf(component, dataArray, featured = false) {
   dataArray = featured ? dataArray.filter((e) => e.featured) : dataArray;
   return dataArray.map((e, i) => React.createElement(component, {...e, key: i}));
 }
@@ -28,7 +28,7 @@ class CV extends Component {
 
   render() {
     return (
-      <article className={classNames('cv-page', { resume: this.props.featured })}>
+      <article className={classNames('cv-page', {resume: this.props.featured})}>
         <header>
           <div>
             <h1>{cvData.info.fullName}</h1>
@@ -36,10 +36,12 @@ class CV extends Component {
               {cvData.info.phone} · {cvData.info.email} · {cvData.info.location}<br />
               Full CV available at: <a href={cvData.info.website}>{cvData.info.website}</a> · {cvData.info.position}
             </p>
-            <img className="school-seal"
-                 src={cvData.info.seal}
-                 role="presentation"
-            />
+            {this.props.seal ?
+              <img className="school-seal"
+                   src={cvData.info.seal}
+                   role="presentation"
+              /> : null}
+
           </div>
 
         </header>
@@ -77,7 +79,7 @@ class CV extends Component {
 
 CV.defaultProps = {featured: false};
 
-let Resume = () => <CV featured={true} />;
+let Resume = () => <CV featured={true}/>;
 
 
 export {Resume, CV};

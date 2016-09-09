@@ -1,8 +1,19 @@
 import React, {Component} from 'react';
 import {CV, Resume} from './CV';
-import { render } from 'react-dom'
-import { Router, Route, Link, browserHistory, IndexRoute } from 'react-router'
-import Switch from 'react-toggle-switch';
+import {render} from 'react-dom';
+import {Router, Route, Link, browserHistory, IndexRoute} from 'react-router';
+import MuiThemeProvider from 'material-ui/styles/MuiThemeProvider';
+import Toggle from 'material-ui/Toggle';
+import Checkbox from 'material-ui/Checkbox';
+import RaisedButton from 'material-ui/RaisedButton';
+import Paper from 'material-ui/Paper';
+import FontIcon from 'material-ui/FontIcon';
+import injectTapEventPlugin from 'react-tap-event-plugin';
+import ReactDOMServer from 'react-dom/server';
+
+// Needed for onTouchTap
+// http://stackoverflow.com/a/34015469/988941
+injectTapEventPlugin();
 import './styles/index.css';
 
 class App extends Component {
@@ -10,30 +21,71 @@ class App extends Component {
   constructor(props) {
     super(props);
     this.state = {
-      featured: props.featured ? true : false
+      featured: props.route.featured ? true : false,
+      seal: true
     };
   }
 
+  onSwitchCVResume = () => {
+    if (this.state.featured) {
+      browserHistory.push("/");
+    } else {
+      browserHistory.push("/resume")
+    }
+    this.setState({featured: !this.state.featured});
+  };
+
+  onSwitchSeal = () => {
+    this.setState({seal: !this.state.seal});
+  };
+
   render() {
     return (
-      <main>
-        <aside>
-          <Switch onClick={() => this.setState({featured: !this.state.featured})}/>
-        </aside>
-        <CV featured={this.state.featured} />
-      </main>
+      <MuiThemeProvider>
+        <main>
+          <aside className="toolbar">
+            <Paper className="toolbar-paper" zDepth={1} rounded={false}>
+              CV
+              <Toggle
+                style={{display: "inline-block", width: "auto"}}
+                toggled={this.state.featured}
+                defaultToggled={this.props.featured}
+                onToggle={this.onSwitchCVResume}
+              />
+              Resume <br />
+              <Checkbox
+                label="Show Seal"
+                checked={this.state.seal}
+                onCheck={this.onSwitchSeal}
+              /> <br />
+              <RaisedButton
+                label="Print"
+                fullWidth={true}
+                primary={true}
+                onTouchTap={() => {print()}}
+                icon={<FontIcon className="material-icons">print</FontIcon>}
+              />
+
+            </Paper>
+          </aside>
+          <CV featured={this.state.featured} seal={this.state.seal}/>
+        </main>
+      </MuiThemeProvider>
     );
   }
 }
 
-render(
-  // <Router history={browserHistory}>
-  //   <Route path="/" component={App} >
-  //     <IndexRoute component={CV}/>
-  //     <Route path="/resume" component={Resume}/>
-  //     <Route path="*" component={CV}/>
-  //   </Route>
-  // </Router>,
-  <App />,
-  document.getElementById('root')
-);
+if (typeof document !== 'undefined') {
+  render(
+    <Router history={browserHistory}>
+      <Route path="/" component={App} featured={false}/>
+      <Route path="/resume" component={App} featured={true}/>
+      <Route path="*" component={App} featured={false}/>
+    </Router>,
+    document.getElementById('root')
+  );
+} else {
+  module.exports = function render(locals, callback) {
+    callback(null, '<html>' + locals.greet + ' from ' + locals.path + '</html>');
+  };
+}
