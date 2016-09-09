@@ -22,7 +22,7 @@ class App extends Component {
     super(props);
     this.state = {
       featured: props.route.featured ? true : false,
-      seal: true
+      seal: false
     };
   }
 
