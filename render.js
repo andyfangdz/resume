@@ -9,6 +9,7 @@ nightmare
   .pdf('build/resume.pdf')
   .goto('http://localhost:9000/')
   .wait(1000)
+  .pdf('build/cv.pdf')
   .evaluate(function() {
     return document.getElementsByTagName('html')[0].innerHTML;
   }).then(function(html) {
