@@ -13,7 +13,7 @@ script: ./deploy.sh
 deploy:
   provider: surge
   project: "./build/"
-  domain: cv-dev.andyfang.me
+  domain: cv.andyfang.me
   skip_cleanup: true
 env:
   global:
