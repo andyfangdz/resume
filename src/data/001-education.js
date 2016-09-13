@@ -8,7 +8,7 @@ export default [
     startDate: "Aug. 2015",
     endDate: "May. 2018",
     isCurrent: true,
-    notes: `Information Network & Intelligence Threads, GPA: 3.7/4.0`,
+    notes: `Major in Computer Science. Information Network & Intelligence Threads, GPA: 3.7/4.0`,
     featured: true
   }
 ];
