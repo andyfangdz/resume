@@ -19,7 +19,7 @@ export default class Publication extends Component {
     });
     if (author === undefined) {
       author = {
-        link: ""
+        link: `https://www.google.com/search?q=${name}`
       };
     }
     return author;
