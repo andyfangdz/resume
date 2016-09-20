@@ -6,7 +6,7 @@ export default [{
   authors: ["Hugo Gualdron", "Robson Cordeiro", "Jose Rodrigues-Jr", "Duen Horng (Polo) Chau", "Minsuk Kahng", "U Kang"],
   venue: "Joint European Conference on Machine Learning and Knowledge Discovery in Databases",
   links: {
-    "Slides": "https://assets.andyfang.me/slides/16-m-flash-pkdd.pdf"
+    "Slides": "https://assets.andyfang.me/slides/16-m-flash-pkdd.pdf",
     "arXiv": "https://arxiv.org/abs/1506.01406",
     "PDF": "https://arxiv.org/pdf/1506.01406v5"
   },
