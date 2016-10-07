@@ -9,7 +9,7 @@ import publications from './003-publications';
 import awards from './004-awards';
 import projects from './006-projects';
 import skills from './007-skills';
-export default {
+let cvData = {
   info: {
     ...info,
     fullName: `${info.firstName} “${info.preferredName}” ${info.lastName}`,
@@ -21,4 +21,9 @@ export default {
   awards,
   projects,
   skills
+};
+
+if (window) {
+  window.cvData = cvData;
 }
+export default cvData;
