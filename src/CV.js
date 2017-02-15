@@ -1,5 +1,7 @@
 import React, {Component} from 'react';
-import './styles/App.scss';
+import './styles/App.css';
+import './styles/markdown-github.css';
+import './styles/sanfrancisco-font.css';
 
 import SectionHeader from './components/SectionHeader';
 

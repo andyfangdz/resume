@@ -1,8 +1,9 @@
 #!/usr/bin/env bash
 
-npm install
-npm install -g pushstate-server
-npm run build
+yarn
+yarn global add pushstate-server
+yarnpkg build
 pushstate-server build &
 node render.js
 rm build/index.html
+
