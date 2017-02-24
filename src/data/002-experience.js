@@ -16,7 +16,16 @@ Declare experience objects with the following schema:
 
  */
 
-export default [
+export default [{
+    title: "Software Development Engineer Intern",
+    company: "Airbnb",
+    companyLink: "https://www.airbnb.com/",
+    location: "San Francisco, CA",
+    startDate: "May. 2017",
+    endDate: "Aug. 2017",
+    notes: `Airterns'17`,
+    featured: true
+  },
   {
     title: "Undergraduate Research Assistant",
     company: "Georgia Institute of Technology",
@@ -60,7 +69,7 @@ Technical lead in an online education startup.
 - Built email marketing system sending 100k+ emails per month.
 - Maintained and updated internal infrastructure across multiple applications and distributed services including celery and memcached.
 `,
-    featured: true
+    featured: false
   }, {
     title: "Software Engineer",
     company: "InitialView",
