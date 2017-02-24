@@ -2,6 +2,16 @@
  * Created by andy on 9/7/16.
  */
 export default [{
+  title: "Carina: Interactive Million-Node Graph Visualization using Web Browser Technologies",
+  authors: ["Dezhi Fang", "Matthew Keezer", "Jacob Williams", "Kshitij Kulkarni", "Robert Pienta", "Duen Horng Chau"],
+  venue: "The 2017 World Wide Web conference (WWW’17)",
+  links: {
+    "arXiv": "https://arxiv.org/abs/1702.07099",
+    "PDF": "https://arxiv.org/pdf/1702.07099"
+  },
+  date: "Apr. 2017",
+  featured: false
+}, {
   title: "[Presenter] M-Flash: Fast Billion-scale Graph Computation Using a Bimodal Block Processing Model",
   authors: ["Hugo Gualdron", "Robson Cordeiro", "Jose Rodrigues-Jr", "Duen Horng (Polo) Chau", "Minsuk Kahng", "U Kang"],
   venue: "Joint European Conference on Machine Learning and Knowledge Discovery in Databases (ECML-PKDD’16)",
