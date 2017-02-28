@@ -3,7 +3,7 @@
  */
 import React, {Component} from 'react';
 
-import authors from '../data/meta/authors';
+import authors from '../../data/meta/authors';
 
 export default class Publication extends Component {
 

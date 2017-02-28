@@ -1,17 +1,17 @@
 import React, {Component} from 'react';
-import './styles/App.css';
-import './styles/markdown-github.css';
-import './styles/sanfrancisco-font.css';
+import '../styles/App.scss';
+import '../styles/markdown-github.css';
+import '../styles/sanfrancisco-font.css';
 
-import SectionHeader from './components/SectionHeader';
+import SectionHeader from '../components/CV/SectionHeader';
 
-import Education from './components/Education';
-import Experience from './components/Experience';
-import Publication from './components/Publication';
-import Award from './components/Award';
-import Project from './components/Project';
-import SkillGroup from './components/SkillGroup';
-import cvData from './data';
+import Education from '../components/CV/Education';
+import Experience from '../components/CV/Experience';
+import Publication from '../components/CV/Publication';
+import Award from '../components/CV/Award';
+import Project from '../components/CV/Project';
+import SkillGroup from '../components/CV/SkillGroup';
+import cvData from '../data';
 import classNames from 'classnames';
 
 function getListOf(component, dataArray, featured = false) {

@@ -1,5 +1,5 @@
 import React, {Component} from 'react';
-import {CV, Resume} from './CV';
+import {CV, Resume} from './containers/CV';
 import {render} from 'react-dom';
 import {Router, Route, Link, browserHistory, IndexRoute} from 'react-router';
 import MuiThemeProvider from 'material-ui/styles/MuiThemeProvider';
@@ -21,7 +21,7 @@ class App extends Component {
   constructor(props) {
     super(props);
     this.state = {
-      featured: props.route.featured ? true : false,
+      featured: !!props.route.featured,
       seal: false
     };
   }

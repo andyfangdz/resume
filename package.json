@@ -6,11 +6,13 @@
     "nightmare": "^2.9.1",
     "node-sass": "^4.5.0",
     "npm-run-all": "^4.0.1",
-    "react-scripts": "0.8.5"
+    "custom-react-scripts": "0.0.23"
   },
   "dependencies": {
     "classnames": "^2.2.5",
-    "material-ui": "^0.16.7",
+    "material-ui": "^0.17.0",
+    "mobx": "^3.1.0",
+    "mobx-react": "^4.1.0",
     "react": "^15.4.2",
     "react-dom": "^15.4.2",
     "react-markdown": "^2.4.4",
@@ -18,11 +20,8 @@
     "react-tap-event-plugin": "^2.0.1"
   },
   "scripts": {
-    "build-css": "node-sass src/ -o src/",
-    "watch-css": "npm run build-css && node-sass src/ -o src/ --watch",
-    "start-js": "react-scripts start",
-    "start": "npm-run-all -p watch-css start-js",
-    "build": "npm run build-css && react-scripts build",
+    "start": "react-scripts start",
+    "build": "react-scripts build",
     "test": "react-scripts test --env=jsdom",
     "eject": "react-scripts eject"
   }
