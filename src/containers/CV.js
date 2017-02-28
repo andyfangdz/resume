@@ -57,7 +57,7 @@ class CV extends Component {
                                 Full CV available at: <a href={cvData.info.website}>{cvData.info.website}</a>
                                 · {cvData.info.position}
                             </p>
-                            {this.props.seal ?
+                            {appState.cv.showSeal ?
                                 <img className="school-seal"
                                      src={cvData.info.seal}
                                      role="presentation"
