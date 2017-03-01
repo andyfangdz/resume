@@ -4,10 +4,10 @@
 import {observable} from "mobx";
 
 class AppState {
-    @observable cv = {
-        featured: false,
-        showSeal: false
-    }
+  @observable cv = {
+    featured: false,
+    showSeal: false
+  }
 }
 
 let appState = new AppState();

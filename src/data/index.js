@@ -3,12 +3,15 @@
  */
 
 import info from './000-info';
-import education from './001-education';
-import experience from './002-experience';
-import publications from './003-publications';
-import awards from './004-awards';
-import projects from './006-projects';
-import skills from './007-skills';
+import education from './010-education';
+import experience from './020-experience';
+import publications from './030-publications';
+import awards from './040-awards';
+import competitionAwards from './041-competition-awards';
+import projects from './060-projects';
+import skills from './070-skills';
+import press from './080-press';
+
 let cvData = {
   info: {
     ...info,
@@ -19,8 +22,10 @@ let cvData = {
   experience,
   publications,
   awards,
+  competitionAwards,
   projects,
-  skills
+  skills,
+  press
 };
 
 if (window) {

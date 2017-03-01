@@ -16,23 +16,24 @@ import './styles/index.css';
 
 class App extends Component {
 
-    render() {
-        return (
-            <MuiThemeProvider>
-                {this.props.children}
-            </MuiThemeProvider>
-        );
-    }
+  render() {
+    return (
+      <MuiThemeProvider>
+        {this.props.children}
+      </MuiThemeProvider>
+    );
+  }
 }
 
 
 render(
-    <Router history={browserHistory}>
-        <Route path="/" component={App}>
-            <Route path="resume" component={CV}/>
-            <Route path="cv" component={CV}/>
-            <IndexRedirect to="/cv" />
-        </Route>
-    </Router>,
-    document.getElementById('root')
+  <Router history={browserHistory}>
+    <Route path="/" component={App}>
+      <Route path="resume" component={CV}/>
+      <Route path="cv" component={CV}/>
+      <Route path="home" component={null}/>
+      <IndexRedirect to="/cv"/>
+    </Route>
+  </Router>,
+  document.getElementById('root')
 );
