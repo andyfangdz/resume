@@ -4,9 +4,10 @@
   "private": true,
   "devDependencies": {
     "custom-react-scripts": "0.0.23",
-    "nightmare": "^2.9.1",
+    "nightmare": "^2.10.0",
     "node-sass": "^4.5.0",
-    "npm-run-all": "^4.0.1"
+    "npm-run-all": "^4.0.1",
+    "pushstate-server": "^3.0.0"
   },
   "dependencies": {
     "classnames": "^2.2.5",
