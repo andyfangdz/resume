@@ -34,7 +34,7 @@ Dezhi “Andy” Fang received:
   "notes": "Presented a stereo in-door location system using computer vision."
 }, {
   "title": "First Prize, National Olympiad in Informatics in Provinces",
-  "date": "Dev. 2013",
+  "date": "Dec. 2013",
   "awardedBy": "China Computer Federation (CCF)",
   "featured": false,
   "notes": "Programming competition in a form similar to ACM-ICPC."
