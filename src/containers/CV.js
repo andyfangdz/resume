@@ -88,7 +88,7 @@ class CV extends Component {
               {getListOf(Press, cvData.press, appState.cv.featured)}
             </section>}
           {appState.cv.featured ? null: <section className="award">
-              <SectionHeader title="Cometitions & Hackathons"/>
+              <SectionHeader title="Competitions & Hackathons"/>
               {getListOf(CompetitionAward, cvData.competitionAwards, appState.cv.featured)}
             </section>}
           <section className="project">
