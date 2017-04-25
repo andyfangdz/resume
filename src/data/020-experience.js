@@ -36,6 +36,7 @@ export default [{
     notes: `
 Research in data mining with professor Polo Chau.
 
+- One of the investigators in NIH's [MD2K](https://md2k.org/) (Mobile Data to Knowledge) initiative. Developing a predictive visualization dashboard.
 - MMap: Scaling up scientific computation with memory mapping
 - ARGO: Billion-scale visualization of network data
 `,
