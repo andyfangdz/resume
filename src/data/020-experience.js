@@ -23,7 +23,9 @@ export default [{
     location: "San Francisco, CA",
     startDate: "May. 2017",
     endDate: "Aug. 2017",
-    notes: `Airterns'17`,
+    notes: `
+- Implemented a thrift serializer/deserializer library for ruby that's more than 15x faster than the existing binding.
+`,
     featured: true
   },
   {
