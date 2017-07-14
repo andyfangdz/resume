@@ -7,7 +7,7 @@ export default [{
   venue: "Demo, ACM International Joint Conference on Pervasive and Ubiquitous Computing (UBICOMP)",
   links: {},
   date: "Sep. 2017",
-  featured: false
+  featured: true
 }, {
   title: "Carina: Interactive Million-Node Graph Visualization using Web Browser Technologies",
   authors: ["Dezhi Fang", "Matthew Keezer", "Jacob Williams", "Kshitij Kulkarni", "Robert Pienta", "Duen Horng Chau"],
