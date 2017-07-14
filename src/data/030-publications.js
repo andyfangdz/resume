@@ -2,6 +2,13 @@
  * Created by andy on 9/7/16.
  */
 export default [{
+  title: "mHealth Visual Discovery Dashboard",
+  authors: ["Dezhi Fang", "Fred Hohman", "Peter Polack", "Hillol Sarker", "Minsuk Kahng", "Moushumi Sharmin", "Mustafa al'Absi", "Duen Horng Chau"],
+  venue: "Demo, ACM International Joint Conference on Pervasive and Ubiquitous Computing (UBICOMP)",
+  links: {},
+  date: "Sep. 2017",
+  featured: false
+}, {
   title: "Carina: Interactive Million-Node Graph Visualization using Web Browser Technologies",
   authors: ["Dezhi Fang", "Matthew Keezer", "Jacob Williams", "Kshitij Kulkarni", "Robert Pienta", "Duen Horng Chau"],
   venue: "The 2017 World Wide Web conference (WWW’17)",
