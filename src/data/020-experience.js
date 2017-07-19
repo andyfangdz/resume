@@ -24,7 +24,7 @@ export default [{
     startDate: "May. 2017",
     endDate: "Aug. 2017",
     notes: `
-- Implemented a thrift serializer/deserializer library for ruby that's more than 15x faster than the existing binding.
+- Implemented a thrift serializer/deserializer library for ruby that's more than 25x faster than the existing binding.
 `,
     featured: true
   },
