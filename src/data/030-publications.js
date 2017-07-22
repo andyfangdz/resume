@@ -5,7 +5,10 @@ export default [{
   title: "mHealth Visual Discovery Dashboard",
   authors: ["Dezhi Fang", "Fred Hohman", "Peter Polack", "Hillol Sarker", "Minsuk Kahng", "Moushumi Sharmin", "Mustafa al'Absi", "Duen Horng Chau"],
   venue: "Demo, ACM International Joint Conference on Pervasive and Ubiquitous Computing (UBICOMP)",
-  links: {},
+  links: {
+    "PDF": "https://s3.andyfang.me/papers/17-ubicomp-dashboard.pdf",
+    "Video": "https://youtu.be/vpvozWf1aCc"
+  },
   date: "Sep. 2017",
   featured: true
 }, {

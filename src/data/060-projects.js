@@ -25,5 +25,5 @@ export default [{
 - Web app for planning trip navigation with a quick stop for food at any point along the route
 `,
   date: "Sep. 2015",
-  featured: true
+  featured: false
 }];
