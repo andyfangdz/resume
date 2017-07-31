@@ -24,7 +24,8 @@ export default [{
     startDate: "May. 2017",
     endDate: "Aug. 2017",
     notes: `
-- Implemented a thrift serializer/deserializer library for ruby that's more than 25x faster than the existing binding. Read more about this work on Airbnb Engineering Blog: [andf.us/sparsam](https://andf.us/sparsam). Find this work open-sourced at: [github.com/airbnb/sparsam](https://github.com/airbnb/sparsam).
+- Implemented a thrift serializer/deserializer library for ruby that's more than 25x faster than the existing binding. 
+- Read more about this work on Airbnb Engineering Blog: [andf.us/sparsam](https://andf.us/sparsam). Find this work open-sourced at: [github.com/airbnb/sparsam](https://github.com/airbnb/sparsam).
 `,
     featured: true
   },
