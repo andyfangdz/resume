@@ -19,16 +19,15 @@ import cvData from '../data';
 import classNames from 'classnames';
 
 
-import '../styles/App.scss';
+import '../styles/App.css';
 import '../styles/markdown-github.css';
 import '../styles/sanfrancisco-font.css';
 
 function getListOf(component, dataArray, featured = false) {
-  dataArray = featured ? dataArray.filter((e) => e.featured) : dataArray;
+  dataArray = featured ? dataArray.filter(e => e.featured) : dataArray;
   return dataArray.map((e, i) => React.createElement(component, {...e, key: i}));
 }
 
-@observer
 class CV extends Component {
 
 
@@ -38,10 +37,6 @@ class CV extends Component {
     }
     return title;
   };
-
-  componentWillMount() {
-
-  }
 
   render() {
     return (
@@ -110,7 +105,4 @@ class CV extends Component {
 
 CV.defaultProps = {featured: false};
 
-let Resume = () => <CV />;
-
-
-export {Resume, CV};
+export default observer(CV);

@@ -14,8 +14,6 @@ import FontIcon from 'material-ui/FontIcon';
 
 import appState from "../../../store/appState";
 
-
-@observer
 class ControlBar extends Component {
 
     constructor(props) {
@@ -59,7 +57,7 @@ class ControlBar extends Component {
                 fullWidth={true}
                 primary={true}
                 onTouchTap={() => {
-                    print()
+                    window.print()
                 }}
                 icon={<FontIcon className="material-icons">print</FontIcon>}
             />
@@ -78,4 +76,4 @@ class ControlBar extends Component {
     }
 }
 
-export default ControlBar;
+export default observer(ControlBar);
