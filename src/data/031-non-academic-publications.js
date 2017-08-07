@@ -8,6 +8,6 @@ export default [{
   date: "Jul. 2017",
   featured: true,
   notes:`
-Short URL: [andf.us/sparsam](andf.us/sparsam), [https://medium.com/airbnb-engineering/8f63044ba149](https://medium.com/airbnb-engineering/8f63044ba149)
+Short URL: [andf.us/sparsam](https://andf.us/sparsam), [https://medium.com/airbnb-engineering/8f63044ba149](https://medium.com/airbnb-engineering/8f63044ba149)
 `
 }];
