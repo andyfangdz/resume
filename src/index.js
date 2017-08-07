@@ -9,11 +9,10 @@ import injectTapEventPlugin from 'react-tap-event-plugin';
 import CV from './containers/CV';
 
 import './styles/index.css';
+
 // Needed for onTouchTap
 // http://stackoverflow.com/a/34015469/988941
 injectTapEventPlugin();
-
-
 
 class App extends Component {
 
@@ -25,7 +24,6 @@ class App extends Component {
     );
   }
 }
-
 
 render(
   <Router history={browserHistory}>

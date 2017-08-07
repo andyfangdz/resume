@@ -1,7 +1,8 @@
 /**
  * Created by andy on 9/7/16.
  */
-import React, {Component} from 'react';
+import React, { Component } from 'react';
+import ReactMarkdown from 'react-markdown';
 
 import authors from '../../data/meta/authors';
 
@@ -30,7 +31,7 @@ export default class Publication extends Component {
       let author = this.getAuthor(key);
       return (<span key={i}><a href={author.link} className={'me' in author ? 'publication-me' : null}>{key}</a>
         {i === this.props.authors.length - 1 ? null : ', '}</span>);
-      });
+    });
   };
 
   render() {
@@ -40,6 +41,7 @@ export default class Publication extends Component {
         <div className="publication-date date">{this.props.date}</div>
         <p className="publication-authors authors">{this.getAuthors()}</p>
         <p className="publication-venue venue">{this.props.venue}</p>
+        {this.props.notes && <ReactMarkdown className="experience-notes notes markdown-body" source={this.props.notes} />}
       </section>
     );
   }

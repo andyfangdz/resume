@@ -6,6 +6,7 @@ import info from './000-info';
 import education from './010-education';
 import experience from './020-experience';
 import publications from './030-publications';
+import nonAcademicPublications from './031-non-academic-publications';
 import awards from './040-awards';
 import competitionAwards from './041-competition-awards';
 import projects from './060-projects';
@@ -21,6 +22,7 @@ let cvData = {
   education,
   experience,
   publications,
+  nonAcademicPublications,
   awards,
   competitionAwards,
   projects,
@@ -28,7 +30,4 @@ let cvData = {
   press
 };
 
-if (window) {
-  window.cvData = cvData;
-}
 export default cvData;

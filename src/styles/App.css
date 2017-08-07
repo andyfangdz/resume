@@ -145,7 +145,7 @@ section p.award-awarded-by {
   margin-bottom: 0.5em; }
 
 .skill-item {
-  margin-top: 0; }
+  margin-top: -0.2em; }
 
 section .skill-item > p {
   font-size: 0.8em;
