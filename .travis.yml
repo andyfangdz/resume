@@ -1,6 +1,6 @@
 language: node_js
 node_js:
-  - 7
+  - 8
 addons:
   apt:
     packages:
@@ -11,7 +11,7 @@ before_install:
 install:
   - export DISPLAY=':99.0'
   - Xvfb :99 -screen 0 1024x768x24 > /dev/null 2>&1 &
-  - yarn
+  - npm install
 script: ./deploy.sh
 deploy:
   provider: surge
