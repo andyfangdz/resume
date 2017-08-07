@@ -54,9 +54,8 @@ class CV extends Component {
                 Full CV available at: <a href={cvData.info.website}>{cvData.info.website}</a>
                 · {cvData.info.position}
               </p>
-              {appState.cv.showSeal && <img className="school-seal" src={seal} />}
+              {appState.cv.showSeal && <img className="school-seal" src={seal} alt="" />}
             </div>
-
           </header>
           <section className="education" id="education" >
             <SectionHeader title="Education" />
@@ -86,7 +85,7 @@ class CV extends Component {
             <SectionHeader title="Competitions & Hackathons" />
             {getListOf(CompetitionAward, cvData.competitionAwards, appState.cv.featured)}
           </section>}
-          {!appState.cv.featured &&<section className="project" id="projects" >
+          {!appState.cv.featured && <section className="project" id="projects" >
             <SectionHeader title={this.selectify("Projects")} />
             {getListOf(Project, cvData.projects, appState.cv.featured)}
           </section>}
