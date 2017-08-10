@@ -3,7 +3,6 @@
  */
 import React, {Component} from 'react';
 import {observer} from "mobx-react";
-import {browserHistory} from "react-router";
 import Route from 'route-parser';
 
 import Toggle from 'material-ui/Toggle';
@@ -12,7 +11,7 @@ import RaisedButton from 'material-ui/RaisedButton';
 import Paper from 'material-ui/Paper';
 import FontIcon from 'material-ui/FontIcon';
 
-import appState from "../../../store/appState";
+import appState, {history} from "../../../store/appState";
 
 class ControlBar extends Component {
 
@@ -27,9 +26,9 @@ class ControlBar extends Component {
 
     onSwitchCVResume = () => {
         if (appState.cv.featured) {
-            browserHistory.push("/cv");
+            history.push("/cv");
         } else {
-            browserHistory.push("/resume")
+            history.push("/resume")
         }
         appState.cv.featured = !appState.cv.featured;
     };
