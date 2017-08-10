@@ -8,6 +8,8 @@ import injectTapEventPlugin from 'react-tap-event-plugin';
 
 import CV from './containers/CV';
 
+import registerServiceWorker from './registerServiceWorker';
+
 import './styles/index.css';
 
 // Needed for onTouchTap
@@ -36,3 +38,5 @@ render(
   </Router>,
   document.getElementById('root')
 );
+
+registerServiceWorker();
