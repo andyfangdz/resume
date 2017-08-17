@@ -66,7 +66,7 @@ class ControlBar extends Component {
                 secondary={true}
                 style={{marginTop: "0.2em"}}
                 onTouchTap={() => {
-                    window.location = (appState.cv.featured ? '/resume.pdf' : '/cv.pdf')
+                    window.open((appState.cv.featured ? '/resume.pdf' : '/cv.pdf'));
                 }}
                 icon={<FontIcon className="material-icons">file_download</FontIcon>}
             />
