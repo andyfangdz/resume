@@ -66,7 +66,7 @@ class ControlBar extends Component {
                 secondary={true}
                 style={{marginTop: "0.2em"}}
                 onTouchTap={() => {
-                    window.open(`https://s3.andyfang.me/${(appState.cv.featured ? 'resume.pdf' : 'cv.pdf')}`);
+                    window.open(`https://s3.andyfang.me/cv/${(appState.cv.featured ? 'resume.pdf' : 'cv.pdf')}`);
                 }}
                 icon={<FontIcon className="material-icons">file_download</FontIcon>}
             />
