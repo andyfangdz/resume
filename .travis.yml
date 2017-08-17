@@ -24,7 +24,7 @@ deploy:
     domain: cv.andyfang.me
     skip_cleanup: true
 
-  - rovider: s3
+  - provider: s3
     access_key_id: AKIAIWZ7LCK2MGJNEIWA
     bucket: s3.andyfang.me
     secret_access_key:
