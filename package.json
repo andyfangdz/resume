@@ -3,7 +3,7 @@
   "version": "0.1.0",
   "private": true,
   "devDependencies": {
-    "custom-react-scripts": "0.0.23",
+    "custom-react-scripts": "0.2.0",
     "nightmare": "^2.10.0",
     "node-sass": "^4.5.0",
     "npm-run-all": "^4.0.2",
