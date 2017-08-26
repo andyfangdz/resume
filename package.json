@@ -10,6 +10,7 @@
     "pushstate-server": "^3.0.0"
   },
   "dependencies": {
+    "autotrack": "^2.4.1",
     "classnames": "^2.2.5",
     "history": "^4.6.3",
     "material-ui": "^0.18.6",
@@ -21,9 +22,11 @@
     "react-markdown": "^2.4.4",
     "react-scripts": "1.0.11",
     "react-tap-event-plugin": "^2.0.1",
-    "route-parser": "^0.0.5"
+    "route-parser": "^0.0.5",
+    "source-map-explorer": "^1.4.0"
   },
   "scripts": {
+    "analyze": "source-map-explorer build/static/js/main.*",
     "build-css": "node-sass-chokidar --include-path ./src --include-path ./node_modules src/ -o src/",
     "watch-css": "npm run build-css && node-sass-chokidar --include-path ./src --include-path ./node_modules src/ -o src/ --watch --recursive",
     "start-js": "react-scripts start",

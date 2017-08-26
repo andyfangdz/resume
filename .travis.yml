@@ -7,8 +7,9 @@ addons:
     packages:
     - xvfb
 cache:
+  yarn: true
   directories:
-  - node_modules
+    - node_modules
 before_install:
 - npm install -g greenkeeper-lockfile@1
 before_script: greenkeeper-lockfile-update
@@ -16,7 +17,7 @@ after_script: greenkeeper-lockfile-upload
 install:
 - export DISPLAY=':99.0'
 - Xvfb :99 -screen 0 1024x768x24 > /dev/null 2>&1 &
-- npm install
+- yarn
 script: "./deploy.sh"
 deploy:
   - provider: surge
