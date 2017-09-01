@@ -11,6 +11,7 @@
   "dependencies": {
     "autotrack": "^2.4.1",
     "classnames": "^2.2.5",
+    "fontfaceobserver": "^2.0.13",
     "history": "^4.6.3",
     "material-ui": "1.0.0-beta.7",
     "material-ui-icons": "^1.0.0-beta.5",

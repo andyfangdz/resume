@@ -45,7 +45,7 @@ class CV extends Component {
         <aside className="toolbar">
           <ControlBar />
         </aside>
-        <article className={classNames('cv-page', { resume: this.props.featured }, 'markdown-body')}>
+        <article className={classNames('cv-page', { resume: this.props.featured, 'font-loaded': appState.cv.fontLoaded }, 'markdown-body')}>
           <header>
             <div>
               <h1>{cvData.info.fullName}</h1>
