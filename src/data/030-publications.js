@@ -26,7 +26,7 @@ export default [{
   authors: ["Hugo Gualdron", "Robson Cordeiro", "Jose Rodrigues-Jr", "Duen Horng (Polo) Chau", "Minsuk Kahng", "U Kang"],
   venue: "Joint European Conference on Machine Learning and Knowledge Discovery in Databases (ECML-PKDD’16)",
   links: {
-    "Slides": "https://assets.andyfang.me/slides/16-m-flash-pkdd.pdf",
+    "Slides": "https://s3.andyfang.me/slides/16-m-flash-pkdd.pdf",
     "arXiv": "https://arxiv.org/abs/1506.01406",
     "PDF": "https://arxiv.org/pdf/1506.01406v5"
   },
@@ -48,7 +48,7 @@ export default [{
   venue: "Proceedings of the 2016 International Conference on Management of Data (SIGMOD/PODS’16)",
   links: {
     "arXiv": "https://arxiv.org/abs/1604.03034",
-    "PDF": "http://www.cc.gatech.edu/~dchau/papers/16-sigmod-m3.pdf"
+    "PDF": "https://s3.andyfang.me/slides/16-mmap-ml-sigmod.pdf"
   },
   date: "Jun. 2016",
   featured: true
