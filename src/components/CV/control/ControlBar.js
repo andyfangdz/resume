@@ -11,6 +11,7 @@ import Checkbox from 'material-ui/Checkbox';
 import Button from 'material-ui/Button';
 import Paper from 'material-ui/Paper';
 import FileDownloadIcon from 'material-ui-icons/FileDownload';
+import PrintIcon from 'material-ui-icons/Print';
 
 import appState, {history} from "../../../store/appState";
 
@@ -60,14 +61,21 @@ class ControlBar extends Component {
             </FormGroup>
             <Button
                 raised={true}
-                dense={true}
-                color="accent"
-                style={{marginTop: "0.2em"}}
+                color="primary"
                 onClick={() => {
                     window.open(`https://s3.andyfang.me/cv/${(appState.cv.featured ? 'resume.pdf' : 'cv.pdf')}`, '_blank');
                 }}
             >
                 <FileDownloadIcon /> PDF
+            </Button>
+            <Button
+                raised={true}
+                color="accent"
+                onClick={() => {
+                    window.print();
+                }}
+            >
+                <PrintIcon /> Print
             </Button>
 
         </Paper>);

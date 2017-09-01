@@ -7,10 +7,10 @@ var pdfOptions = {
 
 console.log("Starting nightmare...");
 nightmare
-    .goto('http://localhost:5000/resume')
+    .goto('http://localhost:9000/resume')
     .wait(1000)
     .pdf('build/resume.pdf', pdfOptions)
-    .goto('http://localhost:5000/cv', pdfOptions)
+    .goto('http://localhost:9000/cv', pdfOptions)
     .wait(1000)
     .pdf('build/cv.pdf')
     .evaluate(function () {
