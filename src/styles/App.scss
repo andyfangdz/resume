@@ -48,6 +48,7 @@ body {
 .cv-page header div {
   vertical-align: bottom;
 }
+
 .cv-page header div .info {
   display: inline-block;
   color: $secondary-color;
@@ -127,7 +128,7 @@ body {
 }
 
 /* Experiences */
-.experience-item .experience-company.company, .experience-location.location{
+.experience-item .experience-company.company, .experience-location.location {
   margin-top: 0;
   display: inline-block;
   font-size: $secondary-font-size;
@@ -188,6 +189,7 @@ section p.award-awarded-by {
 .skill .section-header {
   margin-bottom: 0.5em;
 }
+
 .skill-item {
   margin-top: -0.2em;
 }
@@ -196,6 +198,7 @@ section .skill-item > p {
   font-size: 0.8em;
   margin-bottom: 0;
 }
+
 span.bold {
   font-weight: bold;
 }
@@ -210,6 +213,21 @@ span.bold {
 
 .toolbar .toolbar-paper {
   padding: 0.5em;
+  width: 100%
+}
+
+.toolbar .toolbar-paper > button {
+  width: 100%;
+}
+
+.toolbar .toolbar-paper > div {
+  margin-bottom: -15px;
+}
+
+
+.toolbar .toolbar-paper > div > span {
+  position: relative;
+  top: -5px;
 }
 
 /* Print Styling */
