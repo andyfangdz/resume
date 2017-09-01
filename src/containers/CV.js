@@ -45,13 +45,13 @@ class CV extends Component {
         <aside className="toolbar">
           <ControlBar />
         </aside>
-        <article className={classNames('cv-page', { resume: this.props.featured })}>
+        <article className={classNames('cv-page', { resume: this.props.featured }, 'markdown-body')}>
           <header>
             <div>
               <h1>{cvData.info.fullName}</h1>
               <p className="info">
                 {cvData.info.phone} · {cvData.info.email} · {cvData.info.location}<br />
-                Full CV available at: <a href={cvData.info.website}>{cvData.info.website}</a>
+                Full CV: <a href={cvData.info.website}>{cvData.info.website}</a>
                 · {cvData.info.position}
               </p>
               {appState.cv.showSeal && <img className="school-seal" src={seal} alt="" />}

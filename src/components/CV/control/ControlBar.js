@@ -5,11 +5,12 @@ import React, {Component} from 'react';
 import {observer} from "mobx-react";
 import Route from 'route-parser';
 
-import Toggle from 'material-ui/Toggle';
+import { FormGroup, FormControlLabel } from 'material-ui/Form';
+import Switch from 'material-ui/Switch';
 import Checkbox from 'material-ui/Checkbox';
-import RaisedButton from 'material-ui/RaisedButton';
+import Button from 'material-ui/Button';
 import Paper from 'material-ui/Paper';
-import FontIcon from 'material-ui/FontIcon';
+import FileDownloadIcon from 'material-ui-icons/FileDownload';
 
 import appState, {history} from "../../../store/appState";
 
@@ -38,38 +39,36 @@ class ControlBar extends Component {
     };
 
     render() {
-        return (<Paper className="toolbar-paper" zDepth={1} rounded={false}>
+        return (<Paper className="toolbar-paper" rounded={false}>
             CV
-            <Toggle
-                style={{display: "inline-block", width: "auto"}}
-                toggled={appState.cv.featured}
-                onToggle={this.onSwitchCVResume}
+            <Switch
+                checked={appState.cv.featured}
+                onChange={this.onSwitchCVResume}
             />
             Resume <br />
-            <Checkbox
-                label="Show Seal"
-                checked={appState.cv.showSeal}
-                onCheck={this.onSwitchSeal}
-            /> <br />
-            <RaisedButton
-                label="Print"
-                fullWidth={true}
-                primary={true}
-                onTouchTap={() => {
-                    window.print()
-                }}
-                icon={<FontIcon className="material-icons">print</FontIcon>}
-            />
-            <RaisedButton
-                label="PDF"
-                fullWidth={true}
-                secondary={true}
+
+            <FormGroup row>
+                <FormControlLabel
+                    control={
+                        <Checkbox
+                            checked={appState.cv.showSeal}
+                            onChange={this.onSwitchSeal}
+                        />
+                    }
+                    label="Show Seal"
+                />
+            </FormGroup>
+            <Button
+                raised={true}
+                dense={true}
+                color="accent"
                 style={{marginTop: "0.2em"}}
-                onTouchTap={() => {
+                onClick={() => {
                     window.open(`https://s3.andyfang.me/cv/${(appState.cv.featured ? 'resume.pdf' : 'cv.pdf')}`, '_blank');
                 }}
-                icon={<FontIcon className="material-icons">file_download</FontIcon>}
-            />
+            >
+                <FileDownloadIcon /> PDF
+            </Button>
 
         </Paper>);
     }

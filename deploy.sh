@@ -2,6 +2,6 @@
 set -e
 
 yarn run build
-./node_modules/pushstate-server/bin/pushstate-server build &
+./node_modules/.bin/serve build &
 node render.js
 rm build/index.html
