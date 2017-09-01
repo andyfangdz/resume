@@ -220,12 +220,12 @@ span.bold {
   width: 100%;
 }
 
-.toolbar .toolbar-paper > div {
+.toolbar .toolbar-paper > div.should-feature {
   margin-bottom: -15px;
 }
 
 
-.toolbar .toolbar-paper > div > span {
+.toolbar .toolbar-paper > div.should-feature > span {
   position: relative;
   top: -5px;
 }

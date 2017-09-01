@@ -51,7 +51,7 @@ class ControlBar extends Component {
     const classes = this.props.classes;
     return (
       <Paper className="toolbar-paper">
-        <div>
+        <div className="should-feature">
           <span>CV</span>
           <Switch
             checked={appState.cv.featured}
