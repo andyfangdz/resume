@@ -22,7 +22,6 @@ import seal from "../gt-seal.svg";
 
 import '../styles/App.css';
 import '../styles/markdown-github.css';
-import '../styles/sanfrancisco-font.css';
 
 function getListOf(component, dataArray, featured = false) {
   dataArray = featured ? dataArray.filter(e => e.featured) : dataArray;

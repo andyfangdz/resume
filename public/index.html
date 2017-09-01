@@ -1,35 +1,53 @@
 <!doctype html>
 <html lang="en">
-  <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="shortcut icon" href="%PUBLIC_URL%/favicon.ico">
 
-    <link href="https://fonts.googleapis.com/css?family=Lato:300,300i,400,400i,700,700i|Material+Icons" rel="stylesheet">
-    <title>Dezhi Fang | Resume</title>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="shortcut icon" href="%PUBLIC_URL%/favicon.ico">
+  <title>Dezhi Fang | Resume</title>
 
-    <script>
-      window.ga=window.ga||function(){(ga.q=ga.q||[]).push(arguments)};ga.l=+new Date;
-      ga('create', 'UA-83951952-1', 'auto');
-      // Replace the following lines with the plugins you want to use.
-      ga('require', 'cleanUrlTracker');
-      ga('require', 'eventTracker');
-      ga('require', 'impressionTracker');
-      ga('require', 'maxScrollTracker');
-      ga('require', 'mediaQueryTracker');
-      ga('require', 'outboundFormTracker');
-      ga('require', 'outboundLinkTracker');
-      ga('require', 'pageVisibilityTracker');
-      ga('require', 'socialWidgetTracker');
-      ga('require', 'urlChangeTracker');
-      ga('send', 'pageview');
-    </script>
-    <script defer async src='https://www.google-analytics.com/analytics.js'></script>
-    <script defer async src='https://unpkg.com/autotrack@2.4.1/autotrack.js'></script>
-  </head>
-  <body>
-    <div id="root"></div>
-    <!--
+  <script>
+    window.ga = window.ga || function () {
+      (ga.q = ga.q || []).push(arguments)
+    };
+    ga.l = +new Date;
+    ga('create', 'UA-83951952-1', 'auto');
+    // Replace the following lines with the plugins you want to use.
+    ga('require', 'cleanUrlTracker');
+    ga('require', 'eventTracker');
+    ga('require', 'impressionTracker');
+    ga('require', 'maxScrollTracker');
+    ga('require', 'mediaQueryTracker');
+    ga('require', 'outboundFormTracker');
+    ga('require', 'outboundLinkTracker');
+    ga('require', 'pageVisibilityTracker');
+    ga('require', 'socialWidgetTracker');
+    ga('require', 'urlChangeTracker');
+    ga('send', 'pageview');
+  </script>
+  <script defer async src='https://www.google-analytics.com/analytics.js'></script>
+  <script defer async src='https://unpkg.com/autotrack@2.4.1/autotrack.js'></script>
+  <script>
+    WebFontConfig = {
+      google: {
+        families: ['Lato', 'Material Icons']
+      }
+    };
+
+    (function (d) {
+      var wf = d.createElement('script'),
+        s = d.scripts[0];
+      wf.src = 'https://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js';
+      wf.async = true;
+      s.parentNode.insertBefore(wf, s);
+    })(document);
+  </script>
+</head>
+
+<body>
+  <div id="root"></div>
+  <!--
       This HTML file is a template.
       If you open it directly in the browser, you will see an empty page.
 
@@ -39,5 +57,6 @@
       To begin the development, run `npm start`.
       To create a production bundle, use `npm run build`.
     -->
-  </body>
+</body>
+
 </html>
