@@ -17,7 +17,7 @@ export default [{
   venue: "The 2017 World Wide Web conference (WWW’17)",
   links: {
     "arXiv": "https://arxiv.org/abs/1702.07099",
-    "PDF": "https://arxiv.org/pdf/1702.07099"
+    "PDF": "https://s3.andyfang.me/papers/17-carina-www.pdf"
   },
   date: "Apr. 2017",
   featured: false
@@ -38,7 +38,7 @@ export default [{
   venue: "Proceedings of the Workshop on Human-In-the-Loop Data Analytics (HILDA’16) (Co-located with SIGMOD/PODS’16)",
   links: {
     "ACM": "http://dl.acm.org/citation.cfm?id=2939503",
-    "PDF": "http://minsuk.com/research/paper/hilda2016-kahng-mlcubeexplorer.pdf"
+    "PDF": "https://s3.andyfang.me/papers/16-mlcube-hilda.pdf"
   },
   date: "Jun. 2016",
   featured: true
