@@ -48,7 +48,7 @@ export default [{
   venue: "Proceedings of the 2016 International Conference on Management of Data (SIGMOD/PODS’16)",
   links: {
     "arXiv": "https://arxiv.org/abs/1604.03034",
-    "PDF": "https://s3.andyfang.me/slides/16-mmap-ml-sigmod.pdf"
+    "PDF": "https://s3.andyfang.me/papers/16-mmap-ml-sigmod.pdf"
   },
   date: "Jun. 2016",
   featured: true
