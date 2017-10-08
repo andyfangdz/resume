@@ -22,7 +22,7 @@
     "react-dom": "^16.0.0",
     "react-markdown": "^2.4.4",
     "react-scripts": "1.0.14",
-    "react-tap-event-plugin": "^2.0.1",
+    "react-tap-event-plugin": "^3.0.0",
     "route-parser": "^0.0.5",
     "source-map-explorer": "^1.4.0"
   },
