@@ -12,5 +12,8 @@ export default [
   }, {
     names: ["Minsuk Kahng", "Minsuk (Brian) Kahng", "Brian Kahng"],
     link: "http://minsuk.com/research/"
+  }, {
+    names: ["Fred Hohman"],
+    link: "http://fredhohman.com/"
   }
 ];
