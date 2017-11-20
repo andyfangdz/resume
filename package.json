@@ -20,7 +20,7 @@
     "node-sass-chokidar": "0.0.3",
     "react": "^16.0.0",
     "react-dom": "^16.0.0",
-    "react-markdown": "^2.4.4",
+    "react-markdown": "^3.0.0",
     "react-scripts": "1.0.17",
     "react-tap-event-plugin": "^3.0.0",
     "route-parser": "^0.0.5",
