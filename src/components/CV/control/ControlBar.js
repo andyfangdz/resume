@@ -24,21 +24,21 @@ const styles = theme => ({
 });
 
 class ControlBar extends Component {
-
   constructor(props) {
     super(props);
     this.routeParser = new Route('/:name');
   }
 
   componentWillMount() {
-    appState.cv.featured = this.routeParser.match(window.location.pathname).name === 'resume';
+    appState.cv.featured =
+      this.routeParser.match(window.location.pathname).name === 'resume';
   }
 
   onSwitchCVResume = () => {
     if (appState.cv.featured) {
       history.push('/cv');
     } else {
-      history.push('/resume')
+      history.push('/resume');
     }
     appState.cv.featured = !appState.cv.featured;
   };
@@ -76,11 +76,14 @@ class ControlBar extends Component {
           color="primary"
           onClick={() => {
             window.open(
-              `https://s3.andyfang.me/cv/${(appState.cv.featured ? 'resume.pdf' : 'cv.pdf')}`,
-              '_blank');
+              `https://s3.andyfang.me/cv/${
+                appState.cv.featured ? 'resume.pdf' : 'cv.pdf'
+              }`,
+              '_blank',
+            );
           }}
         >
-          <FileDownloadIcon/> PDF
+          <FileDownloadIcon /> PDF
         </Button>
         <Button
           className={classes.button}
@@ -90,9 +93,8 @@ class ControlBar extends Component {
             window.print();
           }}
         >
-          <PrintIcon/> Print
+          <PrintIcon /> Print
         </Button>
-
       </Paper>
     );
   }

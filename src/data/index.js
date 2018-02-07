@@ -17,7 +17,7 @@ let cvData = {
   info: {
     ...info,
     fullName: `${info.firstName} “${info.preferredName}” ${info.lastName}`,
-    legalName: `${info.firstName} ${info.lastName}`
+    legalName: `${info.firstName} ${info.lastName}`,
   },
   education,
   experience,
@@ -27,7 +27,7 @@ let cvData = {
   competitionAwards,
   projects,
   skills,
-  press
+  press,
 };
 
 export default cvData;

@@ -1,5 +1,5 @@
-import React, {Component} from 'react';
-import {render} from 'react-dom';
+import React, { Component } from 'react';
+import { render } from 'react-dom';
 import { MuiThemeProvider, createMuiTheme } from 'material-ui/styles';
 import FontFaceObserver from 'fontfaceobserver';
 
@@ -11,7 +11,6 @@ import appState from './store/appState';
 const MuiTheme = createMuiTheme();
 
 class App extends Component {
-
   render() {
     return (
       <MuiThemeProvider theme={MuiTheme}>
@@ -26,4 +25,4 @@ registerServiceWorker();
 
 const font = new FontFaceObserver('Lato');
 
-font.load().then(() => appState.cv.fontLoaded = true);
+font.load().then(() => (appState.cv.fontLoaded = true));
