@@ -68,7 +68,7 @@ Utilizing data mining (with Hadoop and Python) to improve malware detection effi
     companyLink: 'http://www.codevs.cn/',
     location: 'Beijing, China',
     startDate: 'Jan. 2014',
-    endDate: null,
+    endDate: 'Aug. 2015',
     notes: `
 Technical lead in an online education startup.
 
@@ -84,7 +84,7 @@ Technical lead in an online education startup.
     companyLink: 'http://initialview.com',
     location: 'Beijing, China',
     startDate: 'Dec. 2014',
-    endDate: 'Sep. 2015',
+    endDate: 'Aug. 2015',
     notes: `
 Full-stack software engineer
 - Sole developer of claryfy.com, a web forum for international students built with Django and PostgreSQL
