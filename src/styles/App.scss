@@ -1,4 +1,4 @@
-$primary-color: #E6A92F;
+$primary-color: #e6a92f;
 $secondary-color: rgba(0, 64, 110, 1);
 
 $item-name-font-size: 1.5em;
@@ -20,7 +20,7 @@ body {
   background: white;
   display: block;
   margin: 0.5cm auto 0.5cm;
-  box-shadow: 0 1px 0 0 #ffffff inset, 0 1px 2px 0 #B3B3B3;
+  box-shadow: 0 1px 0 0 #ffffff inset, 0 1px 2px 0 #b3b3b3;
   max-width: $paper-width;
   box-sizing: border-box;
   padding: 0.5cm;
@@ -128,7 +128,8 @@ body {
 }
 
 /* Experiences */
-.experience-item .experience-company.company, .experience-location.location {
+.experience-item .experience-company.company,
+.experience-location.location {
   margin-top: 0;
   display: inline-block;
   font-size: $secondary-font-size;
@@ -214,7 +215,7 @@ span.bold {
 
 .toolbar .toolbar-paper {
   padding: 0.5em;
-  width: 100%
+  width: 100%;
 }
 
 .toolbar .toolbar-paper > button {
@@ -224,7 +225,6 @@ span.bold {
 .toolbar .toolbar-paper > div.should-feature {
   margin-bottom: -15px;
 }
-
 
 .toolbar .toolbar-paper > div.should-feature > span {
   position: relative;
