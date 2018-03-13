@@ -72,7 +72,7 @@ class ControlBar extends Component {
         </FormGroup>
         <Button
           className={classes.button}
-          raised={true}
+          variant="raised"
           color="primary"
           onClick={() => {
             window.open(
@@ -87,7 +87,7 @@ class ControlBar extends Component {
         </Button>
         <Button
           className={classes.button}
-          raised={true}
+          variant="raised"
           color="accent"
           onClick={() => {
             window.print();
