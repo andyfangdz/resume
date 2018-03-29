@@ -10,7 +10,7 @@ export default {
   phone: '(802) 294-3264',
   position: 'Software Engineer · Researcher',
   pastLocations: ['Atlanta, GA', 'Urumqi, China'],
-  website: 'https://andyfang.me',
+  website: 'https://cv.andyfang.me',
   seal:
     'https://upload.wikimedia.org/wikipedia/commons/f/fd/GeorgiaTechSeal.svg',
 };

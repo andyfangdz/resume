@@ -17,7 +17,7 @@ import SkillGroup from '../components/CV/SkillGroup';
 import cvData from '../data';
 import classNames from 'classnames';
 
-import seal from '../gt-seal.svg';
+import belo from '../airbnb-belo.svg';
 
 import '../styles/App.css';
 import '../styles/markdown-github.css';
@@ -64,7 +64,7 @@ class CV extends Component {
                 · {cvData.info.position}
               </p>
               {appState.cv.showSeal && (
-                <img className="school-seal" src={seal} alt="" />
+                <img className="logo" src={belo} alt="" />
               )}
             </div>
           </header>

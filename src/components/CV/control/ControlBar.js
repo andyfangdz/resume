@@ -67,7 +67,7 @@ class ControlBar extends Component {
                 onChange={this.onSwitchSeal}
               />
             }
-            label="Show Seal"
+            label="Show Logo"
           />
         </FormGroup>
         <Button

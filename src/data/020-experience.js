@@ -18,6 +18,18 @@ Declare experience objects with the following schema:
 
 export default [
   {
+    title: 'Software Development Engineer',
+    company: 'Airbnb',
+    companyLink: 'https://www.airbnb.com/',
+    location: 'San Francisco, CA',
+    startDate: 'May. 2018',
+    endDate: null,
+    notes: `
+Performance Engineering
+    `,
+    featured: true,
+  },
+  {
     title: 'Software Development Engineer Intern',
     company: 'Airbnb',
     companyLink: 'https://www.airbnb.com/',
@@ -36,7 +48,7 @@ export default [
     companyLink: 'http://www.cse.gatech.edu/',
     location: 'Atlanta, GA',
     startDate: 'Oct. 2015',
-    endDate: null,
+    endDate: 'May 2018',
     notes: `
 Research in data mining with professor Polo Chau.
 

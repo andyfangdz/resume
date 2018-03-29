@@ -1,5 +1,5 @@
-$primary-color: #e6a92f;
-$secondary-color: rgba(0, 64, 110, 1);
+$primary-color: #7B0051;
+$secondary-color: #007A87;
 
 $item-name-font-size: 1.5em;
 $item-inner-spacing: 0.3em;
@@ -76,13 +76,13 @@ body {
   margin-bottom: 0;
 }
 
-.school-seal {
+.logo {
   position: absolute;
-  top: 2em;
+  top: 5em;
   right: 2em;
-  height: 20em;
   z-index: -1;
   opacity: 0.2;
+  width: 20em;
 }
 
 .item {
