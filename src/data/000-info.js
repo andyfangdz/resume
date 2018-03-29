@@ -6,10 +6,10 @@ export default {
   lastName: 'Fang',
   preferredName: 'Andy',
   email: 'andy@andyfang.me',
-  location: 'Atlanta, GA',
+  location: 'San Francisco, CA',
   phone: '(802) 294-3264',
   position: 'Software Engineer · Researcher',
-  pastLocations: ['Urumqi, China'],
+  pastLocations: ['Atlanta, GA', 'Urumqi, China'],
   website: 'https://andyfang.me',
   seal:
     'https://upload.wikimedia.org/wikipedia/commons/f/fd/GeorgiaTechSeal.svg',
