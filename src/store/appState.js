@@ -7,7 +7,7 @@ import createHistory from 'history/createBrowserHistory';
 class AppState {
   cv = observable({
     featured: false,
-    showSeal: true,
+    showSeal: false,
     fontLoaded: false,
   });
 }
