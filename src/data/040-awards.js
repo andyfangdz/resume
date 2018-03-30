@@ -53,7 +53,7 @@ Dezhi “Andy” Fang received:
   Awarded to ~10 recipients globally each year. 
 `,
     date: 'Jun. 2016',
-    featured: true,
+    featured: false,
   },
   {
     title: 'Georgia Tech Online Masters Program Scholarship',
