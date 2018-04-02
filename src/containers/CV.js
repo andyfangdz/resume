@@ -29,6 +29,13 @@ function getListOf(component, dataArray, featured = false) {
   );
 }
 
+function DesktopOrMobile({mobile, desktop}) {
+  return [
+    <span key="desktop" className="show-desktop">{desktop}</span>,
+    <span key="mobile" className="show-mobile">{mobile}</span>
+  ]
+} 
+
 class CV extends Component {
   selectify = title => {
     if (appState.cv.featured) {
@@ -57,11 +64,15 @@ class CV extends Component {
             <div>
               <h1>{cvData.info.fullName}</h1>
               <p className="info">
-                {cvData.info.phone} · {cvData.info.email} ·{' '}
+                {cvData.info.phone}
+                <DesktopOrMobile mobile={<br />} desktop={' · '} />
+                <a href={`mailto:${cvData.info.email}`}>{cvData.info.email}</a>
+                <DesktopOrMobile mobile={<br />} desktop={' · '} />
                 {cvData.info.location}
-                <br />
+                <br/>
                 Full CV: <a href={cvData.info.website}>{cvData.info.website}</a>
-                · {cvData.info.position}
+                <DesktopOrMobile mobile={<br />} desktop={' · '} />
+                {cvData.info.position}
               </p>
               {appState.cv.showSeal && (
                 <img className="logo" src={belo} alt="" />

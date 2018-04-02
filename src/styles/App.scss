@@ -96,6 +96,7 @@ body {
   margin-top: 0;
   margin-bottom: 0;
   font-size: $primary-font-size;
+  max-width: calc(100% - 5em);
 }
 
 .item > .date {
@@ -229,6 +230,13 @@ span.bold {
   position: relative;
   top: -5px;
 }
+.show-mobile {
+  display: none;
+}
+
+.show-desktop {
+  display: unset;
+}
 
 /* Print Styling */
 @page {
@@ -245,6 +253,19 @@ span.bold {
     position: relative;
     right: 0;
   }
+
+  .item > .name {
+    max-width: 100%;
+  }
+
+  .show-mobile {
+    display: unset;
+  }
+
+  .show-desktop {
+    display: none;
+  }
+  
 }
 
 @media print {
