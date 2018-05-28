@@ -7,7 +7,7 @@
     "nightmare": "^3.0.1",
     "node-sass-chokidar": "^1.2.2",
     "npm-run-all": "^4.1.1",
-    "serve": "^6.5.3"
+    "serve": "^7.0.0"
   },
   "dependencies": {
     "autotrack": "^2.4.1",
