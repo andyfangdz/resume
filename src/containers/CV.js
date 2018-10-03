@@ -19,7 +19,7 @@ import classNames from 'classnames';
 
 import belo from '../airbnb-belo.svg';
 
-import '../styles/App.css';
+import '../styles/App.scss';
 import '../styles/markdown-github.css';
 
 function getListOf(component, dataArray, featured = false) {
@@ -34,7 +34,7 @@ function DesktopOrMobile({mobile, desktop}) {
     <span key="desktop" className="show-desktop">{desktop}</span>,
     <span key="mobile" className="show-mobile">{mobile}</span>
   ]
-} 
+}
 
 class CV extends Component {
   selectify = title => {

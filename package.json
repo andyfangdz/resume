@@ -26,12 +26,10 @@
     "route-parser": "^0.0.5"
   },
   "scripts": {
-    "analyze": "source-map-explorer build/static/js/main.*",
-    "build-css": "node-sass-chokidar src/styles -o src/styles",
-    "watch-css": "npm run build-css && node-sass-chokidar -w src/styles -o src/styles",
-    "start-js": "react-scripts start",
-    "start": "npm-run-all -p watch-css start-js",
-    "build": "npm run build-css && react-scripts build",
+    "analyze": "npm-run-all -p build analyze:explore",
+    "analyze:explore": "source-map-explorer build/static/js/main.*",
+    "start": "react-scripts start",
+    "build": "react-scripts build",
     "test": "react-scripts test --env=jsdom",
     "eject": "react-scripts eject"
   },
