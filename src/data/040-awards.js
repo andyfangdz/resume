@@ -1,7 +1,8 @@
 export default [
   {
     title: 'Outstanding Undergraduate Researcher Award',
-    awardedBy: 'Undergraduate Research Opportunities Program, Georgia Institute of Technology',
+    awardedBy:
+      'Undergraduate Research Opportunities Program, Georgia Institute of Technology',
     notes: `
 Annually, one student from each department in Georgia Tech is nominated
 to receive the award on the basis of involvement in long-term research projects, 
@@ -18,7 +19,7 @@ the research environment, and unique contributions to the field.
 Annually, one student from College of Computing is nominated by faculty members
 to receive the award, recognizing their involvement in undergraduate research.
 `,
-date: 'Apr. 2018',
+    date: 'Apr. 2018',
     featured: false,
   },
   {

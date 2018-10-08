@@ -9,9 +9,7 @@ import appState from './store/appState';
 
 class App extends Component {
   render() {
-    return (
-      <CV />
-    );
+    return <CV />;
   }
 }
 

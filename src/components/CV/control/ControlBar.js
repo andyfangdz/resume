@@ -80,7 +80,7 @@ class ControlBar extends Component {
               `https://s3.andyfang.me/cv/${
                 appState.cv.featured ? 'resume.pdf' : 'cv.pdf'
               }`,
-              '_blank',
+              '_blank'
             );
           }}
         >

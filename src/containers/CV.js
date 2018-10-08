@@ -25,15 +25,19 @@ import '../styles/markdown-github.css';
 function getListOf(component, dataArray, featured = false) {
   dataArray = featured ? dataArray.filter(e => e.featured) : dataArray;
   return dataArray.map((e, i) =>
-    React.createElement(component, { ...e, key: i }),
+    React.createElement(component, { ...e, key: i })
   );
 }
 
-function DesktopOrMobile({mobile, desktop}) {
+function DesktopOrMobile({ mobile, desktop }) {
   return [
-    <span key="desktop" className="show-desktop">{desktop}</span>,
-    <span key="mobile" className="show-mobile">{mobile}</span>
-  ]
+    <span key="desktop" className="show-desktop">
+      {desktop}
+    </span>,
+    <span key="mobile" className="show-mobile">
+      {mobile}
+    </span>,
+  ];
 }
 
 class CV extends Component {
@@ -57,7 +61,7 @@ class CV extends Component {
               resume: this.props.featured,
               'font-loaded': appState.cv.fontLoaded,
             },
-            'markdown-body',
+            'markdown-body'
           )}
         >
           <header>
@@ -69,7 +73,7 @@ class CV extends Component {
                 <a href={`mailto:${cvData.info.email}`}>{cvData.info.email}</a>
                 <DesktopOrMobile mobile={<br />} desktop={' · '} />
                 {cvData.info.location}
-                <br/>
+                <br />
                 Full CV: <a href={cvData.info.website}>{cvData.info.website}</a>
                 <DesktopOrMobile mobile={<br />} desktop={' · '} />
                 {cvData.info.position}
@@ -98,7 +102,7 @@ class CV extends Component {
             {getListOf(
               Publication,
               cvData.nonAcademicPublications,
-              appState.cv.featured,
+              appState.cv.featured
             )}
           </section>
           <section className="award" id="awards">
@@ -117,7 +121,7 @@ class CV extends Component {
               {getListOf(
                 CompetitionAward,
                 cvData.competitionAwards,
-                appState.cv.featured,
+                appState.cv.featured
               )}
             </section>
           )}
