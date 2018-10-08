@@ -2,14 +2,15 @@ import React, { Component } from 'react';
 import { observer } from 'mobx-react';
 import Route from 'route-parser';
 
-import { FormGroup, FormControlLabel } from 'material-ui/Form';
-import Switch from 'material-ui/Switch';
-import Checkbox from 'material-ui/Checkbox';
-import Button from 'material-ui/Button';
-import { withStyles } from 'material-ui/styles';
-import Paper from 'material-ui/Paper';
-import FileDownloadIcon from 'material-ui-icons/FileDownload';
-import PrintIcon from 'material-ui-icons/Print';
+import FormGroup from '@material-ui/core/FormGroup';
+import FormControlLabel from '@material-ui/core/FormControlLabel';
+import Switch from '@material-ui/core/Switch';
+import Checkbox from '@material-ui/core/Checkbox';
+import Button from '@material-ui/core/Button';
+import { withStyles } from '@material-ui/core/styles';
+import Paper from '@material-ui/core/Paper';
+import FileDownloadIcon from '@material-ui/icons/SaveAlt';
+import PrintIcon from '@material-ui/icons/Print';
 
 import appState, { history } from '../../../store/appState';
 

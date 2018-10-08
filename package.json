@@ -5,18 +5,18 @@
   "devDependencies": {
     "@andyfangdz/prettierrc": "^6.0.1",
     "nightmare": "^3.0.1",
-    "node-sass-chokidar": "^1.3.3",
+    "node-sass": "^4.9.3",
     "npm-run-all": "^4.1.3",
     "serve": "^10.0.2",
     "source-map-explorer": "^1.6.0"
   },
   "dependencies": {
+    "@material-ui/core": "^3.2.0",
+    "@material-ui/icons": "^3.0.1",
     "autotrack": "^2.4.1",
     "classnames": "^2.2.6",
     "fontfaceobserver": "^2.0.13",
     "history": "^4.6.3",
-    "material-ui": "1.0.0-beta.37",
-    "material-ui-icons": "1.0.0-beta.36",
     "mobx": "^5.5.0",
     "mobx-react": "^5.2.8",
     "react": "^16.5.2",
@@ -27,8 +27,8 @@
     "route-parser": "^0.0.5"
   },
   "scripts": {
-    "analyze": "npm-run-all -p build analyze:explore",
-    "analyze:explore": "source-map-explorer build/static/js/main.*",
+    "analyze": "npm-run-all build analyze:explore",
+    "analyze:explore": "source-map-explorer build/static/js/*",
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test --env=jsdom",
