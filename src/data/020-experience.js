@@ -25,7 +25,7 @@ export default [
     startDate: 'May. 2018',
     endDate: null,
     notes: `
-Performance Engineering
+Cloud Infrastructure, Production Platform
     `,
     featured: true,
   },
