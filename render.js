@@ -17,7 +17,7 @@ nightmare
     return document.getElementsByTagName('html')[0].innerHTML;
   })
   .then(function(html) {
-    fs.writeFile('build/200.html', html);
+    fs.writeFileSync('build/200.html', html);
     console.log('Nightmare built.');
     return nightmare.end();
   })
