@@ -22,7 +22,7 @@ export default [
     company: 'Airbnb',
     companyLink: 'https://www.airbnb.com/',
     location: 'San Francisco, CA',
-    startDate: 'May. 2018',
+    startDate: 'May. 21, 2018',
     endDate: null,
     notes: `
 Cloud Infrastructure, Production Platform
@@ -34,8 +34,8 @@ Cloud Infrastructure, Production Platform
     company: 'Airbnb',
     companyLink: 'https://www.airbnb.com/',
     location: 'San Francisco, CA',
-    startDate: 'May. 2017',
-    endDate: 'Aug. 2017',
+    startDate: 'May. 22, 2017',
+    endDate: 'Aug. 04, 2017',
     notes: `
 - Implemented a thrift serializer/deserializer library for ruby that's more than 25x faster than the existing binding. 
 - Read more about this work on Airbnb Engineering Blog: [andf.us/sparsam](https://andf.us/sparsam). Find this work open-sourced at: [github.com/airbnb/sparsam](https://github.com/airbnb/sparsam).
@@ -47,8 +47,8 @@ Cloud Infrastructure, Production Platform
     company: 'Georgia Institute of Technology',
     companyLink: 'http://www.cse.gatech.edu/',
     location: 'Atlanta, GA',
-    startDate: 'Oct. 2015',
-    endDate: 'May 2018',
+    startDate: 'Oct. 26, 2015',
+    endDate: 'May. 04, 2018',
     notes: `
 Research in data mining with professor Polo Chau.
 
@@ -63,8 +63,8 @@ Research in data mining with professor Polo Chau.
     company: 'Symantec Corporation',
     companyLink: 'https://www.symantec.com/theme/star',
     location: 'Los Angeles, CA',
-    startDate: 'May. 2016',
-    endDate: 'Aug. 2016',
+    startDate: 'May. 16, 2016',
+    endDate: 'Aug. 12, 2016',
     notes: `
 Utilizing data mining (with Hadoop and Python) to improve malware detection efficacy.
 
