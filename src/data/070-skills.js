@@ -1,7 +1,15 @@
 export default [
   {
     name: 'Programming Languages',
-    items: ['Python', 'Java', 'Scala', 'Bash', 'C/C++', 'JavaScript/TypeScript', 'Ruby'],
+    items: [
+      'Python',
+      'Java',
+      'Scala',
+      'Bash',
+      'C/C++',
+      'JavaScript/TypeScript',
+      'Ruby',
+    ],
   },
   {
     name: 'Infrastructure',
@@ -18,7 +26,7 @@ export default [
       'DynamoDB',
       'SQS',
       'Resque',
-      'Quartz'
+      'Quartz',
     ],
   },
   {
@@ -35,13 +43,6 @@ export default [
   },
   {
     name: 'Web Development',
-    items: [
-      'Django',
-      'NodeJS',
-      'Webpack',
-      'React',
-      'Three.js',
-      'D3.js',
-    ],
+    items: ['Django', 'NodeJS', 'Webpack', 'React', 'Three.js', 'D3.js'],
   },
 ];
