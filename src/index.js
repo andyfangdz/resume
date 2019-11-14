@@ -3,7 +3,6 @@ import { render } from 'react-dom';
 import FontFaceObserver from 'fontfaceobserver';
 
 import CV from './containers/CV';
-import registerServiceWorker from './registerServiceWorker';
 import './styles/index.css';
 import appState from './store/appState';
 
@@ -14,7 +13,6 @@ class App extends Component {
 }
 
 render(<App />, document.getElementById('root'));
-registerServiceWorker();
 
 const font = new FontFaceObserver('Lato');
 
