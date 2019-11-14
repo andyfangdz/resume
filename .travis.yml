@@ -20,11 +20,6 @@ install:
 - yarn
 script: "./deploy.sh"
 deploy:
-  - provider: surge
-    project: "./build/"
-    domain: cv.andyfang.me
-    skip_cleanup: true
-
   - provider: s3
     access_key_id: AKIAIWZ7LCK2MGJNEIWA
     bucket: s3.andyfang.me

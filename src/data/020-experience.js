@@ -1,21 +1,3 @@
-/**
- * Created by andy on 9/7/16.
- */
-
-/*
-Declare experience objects with the following schema:
-  {
-    title: "",
-    company: "",
-    companyLink: "",
-    location: "",
-    startDate: "",
-    endDate: null,
-    notes: ``
-  }
-
- */
-
 export default [
   {
     title: 'Software Development Engineer',
@@ -25,7 +7,14 @@ export default [
     startDate: 'May. 21, 2018',
     endDate: null,
     notes: `
-Cloud Infrastructure, Production Platform
+Cloud Infrastructure, Production Platform. Responsibilities include:
+- Built distributed tracing pipeline for collecting frontend performance metrics.
+- Built performance profiling and monitoring tooling for JVM applications running in Kuberenetes/Docker.
+- Maintains Airbnb's job queueing system built on top of Resque.
+  Built a scalable and distributed queueing system based on DynamoDB.
+- Built multi-cluster tooling for Airbnb's Kafka clusters,
+  including a metadata proxy that multiplexes Kafka requests based on the Kafka TCP protocol.
+- Led an intern as intern manager during Summer, 2019.
     `,
     featured: true,
   },
@@ -37,8 +26,12 @@ Cloud Infrastructure, Production Platform
     startDate: 'May. 22, 2017',
     endDate: 'Aug. 04, 2017',
     notes: `
-- Implemented a thrift serializer/deserializer library for ruby that's more than 25x faster than the existing binding. 
-- Read more about this work on Airbnb Engineering Blog: [andf.us/sparsam](https://andf.us/sparsam). Find this work open-sourced at: [github.com/airbnb/sparsam](https://github.com/airbnb/sparsam).
+- Implemented a thrift serializer/deserializer library for
+  ruby that's more than 25x faster than the existing binding.
+- Read more about this work on Airbnb Engineering Blog:
+  [andf.us/sparsam](https://andf.us/sparsam).
+  Find this work open-sourced at:
+  [github.com/airbnb/sparsam](https://github.com/airbnb/sparsam).
 `,
     featured: true,
   },
@@ -50,9 +43,10 @@ Cloud Infrastructure, Production Platform
     startDate: 'Oct. 26, 2015',
     endDate: 'May. 04, 2018',
     notes: `
-Research in data mining with professor Polo Chau.
+Research in data mining with professor [Polo Chau](https://poloclub.github.io/polochau/).
 
-- One of the investigators in NIH's [MD2K](https://md2k.org/) (Mobile Data to Knowledge) initiative. Developing a predictive visualization dashboard.
+- One of the investigators in NIH's [MD2K](https://md2k.org/) (**M**obile **D**ata **to** **K**nowledge) initiative.
+  Developed a predictive visualization dashboard for exploring correlations between activity, stress, and smoking relapses.
 - MMap: Scaling up scientific computation with memory mapping
 - ARGO: Billion-scale visualization of network data
 `,
@@ -69,7 +63,7 @@ Research in data mining with professor Polo Chau.
 Utilizing data mining (with Hadoop and Python) to improve malware detection efficacy.
 
 - Inferring unknown files' reputations with parent file and execution environment features.
-- Deployed new rule in Symantec's AV Engine with a false positive rate of only 0.2%. Used in Norton Security and Symantec Endpoint Protection. 
+- Deployed new rule in Symantec's AV Engine with a false positive rate of only 0.2%. Used in Norton Security and Symantec Endpoint Protection.
 - Implemented a decision tree executor for detecting malware using file features that replaced Symantec's existing implementation.
 `,
     featured: true,

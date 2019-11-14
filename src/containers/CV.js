@@ -91,10 +91,6 @@ class CV extends Component {
             <SectionHeader title={this.selectify('Experience')} />
             {getListOf(Experience, cvData.experience, appState.cv.featured)}
           </section>
-          <section className="publication" id="publications">
-            <SectionHeader title={this.selectify('Publications')} />
-            {getListOf(Publication, cvData.publications, appState.cv.featured)}
-          </section>
           <section className="publication" id="tech-publications">
             <SectionHeader
               title={this.selectify('Non Academic Publications')}
@@ -104,6 +100,10 @@ class CV extends Component {
               cvData.nonAcademicPublications,
               appState.cv.featured
             )}
+          </section>
+          <section className="publication" id="publications">
+            <SectionHeader title={this.selectify('Academic Publications')} />
+            {getListOf(Publication, cvData.publications, appState.cv.featured)}
           </section>
           <section className="award" id="awards">
             <SectionHeader title={this.selectify('Awards')} />

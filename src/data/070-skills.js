@@ -1,54 +1,47 @@
-/**
- * Created by andy on 9/7/16.
- */
 export default [
   {
-    name: 'Web Development',
-    items: [
-      'Django',
-      'HTML / CSS',
-      'JavaScript',
-      'NodeJS',
-      'Webpack',
-      'Gulp',
-      'React',
-      'Flux',
-      'Three.js',
-      'D3.js',
-    ],
+    name: 'Programming Languages',
+    items: ['Python', 'Java', 'Scala', 'Bash', 'C/C++', 'JavaScript/TypeScript', 'Ruby'],
   },
   {
     name: 'Infrastructure',
     items: [
-      'Memcached',
-      'Redis',
-      'Nginx',
-      'WSGI',
-      'RabbitMQ',
-      'Linux',
-      'Supervisor',
-      'Vagrant',
+      'Apache Kafka',
+      'Kubernetes',
       'Docker',
+      'Chef',
+      'Terraform',
       'Amazon AWS',
+      'Netty',
+      'Redis',
+      'MySQL',
+      'DynamoDB',
+      'SQS',
+      'Resque',
+      'Quartz'
     ],
-  },
-  {
-    name: 'Programming Languages',
-    items: ['C / C++', 'Python', 'JavaScript', 'Java'],
   },
   {
     name: 'Data Mining',
     items: [
-      'Python',
-      'OpenCV',
-      'Jupyter Notebook',
-      'SciPy',
-      'Hadoop',
+      'Flink',
       'Spark',
-      'Hive',
+      'Hive/Presto',
+      'Jupyter',
       'Pandas',
       'NumPy',
       'Scikit-learn',
+    ],
+  },
+  {
+    name: 'Web Development',
+    items: [
+      'Django',
+      'NodeJS',
+      'Webpack',
+      'React',
+      'Three.js',
+      'D3.js',
     ],
   },
 ];

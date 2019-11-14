@@ -200,7 +200,7 @@ section .skill-item > p {
   margin-bottom: 0;
 }
 
-span.bold {
+.bold {
   font-weight: bold;
 }
 
@@ -265,7 +265,7 @@ span.bold {
   .show-desktop {
     display: none;
   }
-  
+
 }
 
 @media print {
