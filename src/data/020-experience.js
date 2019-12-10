@@ -10,11 +10,11 @@ export default [
 Cloud Infrastructure, Production Platform. Responsibilities include:
 - Built distributed tracing pipeline for collecting frontend performance metrics.
 - Built performance profiling and monitoring tooling for JVM applications running in Kuberenetes/Docker.
-- Maintains Airbnb's job queueing system built on top of Resque.
-  Built a scalable and distributed queueing system based on DynamoDB.
+- Maintains Airbnb's distributed job queueing system built on top of Resque and DynamoDB.
+  Read more about this work: <https://medium.com/p/93ab10f05f99>.
+  Led an intern as intern manager during Summer 2019 for this work.
 - Built multi-cluster tooling for Airbnb's Kafka clusters,
   including a metadata proxy that multiplexes Kafka requests based on the Kafka TCP protocol.
-- Led an intern as intern manager during Summer, 2019.
     `,
     featured: true,
   },
