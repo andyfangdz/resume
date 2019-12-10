@@ -21,7 +21,7 @@ export default [
       Video: 'https://youtu.be/vpvozWf1aCc',
     },
     date: 'Sep. 2017',
-    featured: true,
+    featured: false,
   },
   {
     title:
