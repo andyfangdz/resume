@@ -10,7 +10,7 @@ export default [
     links: {
       'andf.us/dynein': 'https://andf.us/dynein',
     },
-    date: 'Dec. 2018',
+    date: 'Dec. 2019',
     featured: true,
     notes: `
 Short URL: [andf.us/dynein](https://andf.us/dynein), <https://medium.com/p/93ab10f05f99>
