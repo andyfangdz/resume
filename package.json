@@ -5,7 +5,7 @@
   "devDependencies": {
     "@andyfangdz/prettierrc": "^7.0",
     "nightmare": "^3.0",
-    "node-sass": "^4.13.0",
+    "node-sass": "^4.13.1",
     "npm-run-all": "^4.1",
     "serve": "^11.2.0",
     "source-map-explorer": "^2.1.0"
