@@ -14,7 +14,7 @@ import PrintIcon from '@material-ui/icons/Print';
 
 import appState, { history } from '../../../store/appState';
 
-const styles = theme => ({
+const styles = (theme) => ({
   button: {
     margin: 0,
     marginBottom: '10px',
@@ -28,9 +28,6 @@ class ControlBar extends Component {
   constructor(props) {
     super(props);
     this.routeParser = new Route('/:name');
-  }
-
-  componentWillMount() {
     appState.cv.featured =
       this.routeParser.match(window.location.pathname).name === 'resume';
   }
@@ -44,36 +41,23 @@ class ControlBar extends Component {
     appState.cv.featured = !appState.cv.featured;
   };
 
-  onSwitchSeal = () => {
-    appState.cv.showSeal = !appState.cv.showSeal;
-  };
-
   render() {
     const classes = this.props.classes;
     return (
       <Paper className="toolbar-paper">
-        <div className="should-feature">
-          <span>CV</span>
-          <Switch
-            checked={appState.cv.featured}
-            onChange={this.onSwitchCVResume}
-          />
-          <span>Resume</span>
-        </div>
         <FormGroup row={true}>
-          <FormControlLabel
-            control={
-              <Checkbox
-                checked={appState.cv.showSeal}
-                onChange={this.onSwitchSeal}
-              />
-            }
-            label="Show Logo"
-          />
+          <div className="should-feature">
+            <span>CV</span>
+            <Switch
+              checked={appState.cv.featured}
+              onChange={this.onSwitchCVResume}
+            />
+            <span>Resume</span>
+          </div>
         </FormGroup>
         <Button
           className={classes.button}
-          variant="raised"
+          variant="contained"
           color="primary"
           onClick={() => {
             window.open(
@@ -86,8 +70,8 @@ class ControlBar extends Component {
         </Button>
         <Button
           className={classes.button}
-          variant="raised"
-          color="accent"
+          variant="contained"
+          color="secondary"
           onClick={() => {
             window.print();
           }}

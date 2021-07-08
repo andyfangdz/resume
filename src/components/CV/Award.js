@@ -12,7 +12,7 @@ export default class Award extends Component {
         <div className="award-date date">{this.props.date}</div>
         <ReactMarkdown
           className="award-notes notes markdown-body"
-          source={this.props.notes}
+          children={this.props.notes}
         />
       </section>
     );

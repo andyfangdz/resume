@@ -5,15 +5,15 @@ import React, { Component } from 'react';
 import ReactMarkdown from 'react-markdown';
 
 export default class Experience extends Component {
-  getDate = () => {
-    let result = `${this.props.startDate} to `;
-    if (this.props.endDate) {
-      result += this.props.endDate;
-    } else {
-      result += 'current';
-    }
-    return result;
-  };
+  getDate = () =>
+    this.props.dates
+      .map(
+        ({ startDate, endDate = null, note = null }) =>
+          `${startDate} to ` +
+          (endDate ? endDate : 'current') +
+          (note ? ` (${note})` : '')
+      )
+      .join(', ');
 
   render() {
     return (
@@ -30,7 +30,7 @@ export default class Experience extends Component {
         <div className="experience-date date">{this.getDate()}</div>
         <ReactMarkdown
           className="experience-notes notes markdown-body"
-          source={this.props.notes}
+          children={this.props.notes}
         />
       </section>
     );

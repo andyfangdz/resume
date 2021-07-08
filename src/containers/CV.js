@@ -23,7 +23,7 @@ import '../styles/App.scss';
 import '../styles/markdown-github.css';
 
 function getListOf(component, dataArray, featured = false) {
-  dataArray = featured ? dataArray.filter(e => e.featured) : dataArray;
+  dataArray = featured ? dataArray.filter((e) => e.featured) : dataArray;
   return dataArray.map((e, i) =>
     React.createElement(component, { ...e, key: i })
   );
@@ -41,7 +41,7 @@ function DesktopOrMobile({ mobile, desktop }) {
 }
 
 class CV extends Component {
-  selectify = title => {
+  selectify = (title) => {
     if (appState.cv.featured) {
       return `Selected ${title}`;
     }
@@ -78,9 +78,6 @@ class CV extends Component {
                 <DesktopOrMobile mobile={<br />} desktop={' · '} />
                 {cvData.info.position}
               </p>
-              {appState.cv.showSeal && (
-                <img className="logo" src={belo} alt="" />
-              )}
             </div>
           </header>
           <section className="education" id="education">

@@ -20,7 +20,7 @@ export default class Press extends Component {
         {this.props.quote ? (
           <ReactMarkdown
             className="press-quotes quotes markdown-body"
-            source={this.props.quote}
+            children={this.props.quote}
           />
         ) : null}
       </section>

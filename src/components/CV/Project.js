@@ -11,7 +11,7 @@ export default class Project extends Component {
         <div className="project-date date">{this.props.date}</div>
         <ReactMarkdown
           className="project-notes notes markdown-body"
-          source={this.props.notes}
+          children={this.props.notes}
         />
       </section>
     );

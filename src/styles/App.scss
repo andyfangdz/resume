@@ -76,15 +76,6 @@ body {
   margin-bottom: 0;
 }
 
-.logo {
-  position: absolute;
-  top: 5em;
-  right: 2em;
-  z-index: -1;
-  opacity: 0.2;
-  width: 20em;
-}
-
 .item {
   position: relative;
   margin-top: 0.25em;
@@ -265,7 +256,6 @@ section .skill-item > p {
   .show-desktop {
     display: none;
   }
-
 }
 
 @media print {

@@ -8,16 +8,16 @@ import authors from '../../data/meta/authors';
 
 export default class Publication extends Component {
   getLinks = () => {
-    return Object.keys(this.props.links).map(key => (
+    return Object.keys(this.props.links).map((key) => (
       <span key={key}>
         [<a href={this.props.links[key]}>{key}</a>]
       </span>
     ));
   };
 
-  getAuthor = name => {
-    let author = authors.find(author => {
-      return author.names.findIndex(e => e === name) !== -1;
+  getAuthor = (name) => {
+    let author = authors.find((author) => {
+      return author.names.findIndex((e) => e === name) !== -1;
     });
     if (author === undefined) {
       author = {
@@ -56,7 +56,7 @@ export default class Publication extends Component {
         {this.props.notes && (
           <ReactMarkdown
             className="experience-notes notes markdown-body"
-            source={this.props.notes}
+            children={this.props.notes}
           />
         )}
       </section>

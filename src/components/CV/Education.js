@@ -19,7 +19,7 @@ export default class Education extends Component {
         <div className="education-date date">{this.getDate()}</div>
         <ReactMarkdown
           className="education-notes notes markdown-body"
-          source={this.props.notes}
+          children={this.props.notes}
         />
       </section>
     );

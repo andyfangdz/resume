@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import { render } from 'react-dom';
 import FontFaceObserver from 'fontfaceobserver';
+import { runInAction } from 'mobx';
 
 import CV from './containers/CV';
 import './styles/index.css';
@@ -16,4 +17,4 @@ render(<App />, document.getElementById('root'));
 
 const font = new FontFaceObserver('Lato');
 
-font.load().then(() => (appState.cv.fontLoaded = true));
+font.load().then(() => runInAction(() => (appState.cv.fontLoaded = true)));

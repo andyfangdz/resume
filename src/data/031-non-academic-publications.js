@@ -2,10 +2,7 @@ export default [
   {
     title:
       'Dynein: Building an Open-source Distributed Delayed Job Queueing System',
-    authors: [
-      'Dezhi “Andy” Fang',
-      'Cloud Infrastructure · Airbnb',
-    ],
+    authors: ['Dezhi “Andy” Fang', 'Cloud Infrastructure · Airbnb'],
     venue: 'Airbnb Engineering & Data Science Blog',
     links: {
       'andf.us/dynein': 'https://andf.us/dynein',
