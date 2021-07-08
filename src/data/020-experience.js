@@ -50,8 +50,11 @@ Research in data mining with professor [Polo Chau](https://poloclub.github.io/po
 
 - One of the investigators in NIH's [MD2K](https://md2k.org/) (**M**obile **D**ata **to** **K**nowledge) initiative.
   Developed a predictive visualization dashboard for exploring correlations between activity, stress, and smoking relapses.
-- MMap: Scaling up scientific computation with memory mapping
-- ARGO: Billion-scale visualization of network data
+  [Paper](https://s3.andyfang.me/papers/17-ubicomp-dashboard.pdf).
+- MMap: Scaling up scientific computation with memory mapping.
+  [Paper](https://s3.andyfang.me/papers/16-mmap-ml-sigmod.pdf).
+- ARGO: Billion-scale visualization of network data.
+  [Paper](https://s3.andyfang.me/papers/17-carina-www.pdf).
 `,
     featured: true,
   },
