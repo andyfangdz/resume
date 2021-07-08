@@ -17,13 +17,12 @@ install:
 script: "./deploy.sh"
 deploy:
   provider: s3
-  access_key_id: AKIAI3YF4WSCRVAJUY7Q
+  access_key_id: $AWS_ACCESS_KEY_ID
   bucket: s3.andyfang.me
   skip_cleanup: true
   local_dir: build
   upload-dir: cv
-  secret_access_key:
-    secure: fPOqI4+8In9SpIf7HpDqrlAvxIZCNPnxuy5B7A+ZKc/wHMgrh/zE5f4Ym0ovHrhKTmWBHvrqHAhzBQIQ0eWibEg9CUpNT+xouVA2/2/WpSjrsLVBmTyYDgRft5DgAkhBmYdF/BnlWExCAPJDBNyYFY3idKMQjcvxEuZ+D9suNrcRp4DYjdTDl36SwtydYH7r1jCnjXK9+bB62k6OojZHLqQoLnJTM7pmzi+Wy4Ec8yZKHbvo18k5SC7Xh10pjShbPM421EXZTmRNtljro7qT4qo6W+nBG/GgoResLMvkikMRRdjRDlsV9d1FOXWChJC6+Y8cVHXZpvq+7NxbgX6PCfczB1WxmF3im7ycnomhQZXufzwQfPTjSSykZtEz84GeU61/nmi7F95TJsoijr4ha8HGSpBtWJJVLe+K4mWalmyBqvG13z7w2UiZZMPu9P/FRbeG39ldLF9ka2MURlEE5P3zPEJF/TFyHMkJrJGLNHtXOjsyjmtXS+FUi3zkthYZDSTknvfKDBVZYKqGIXapIyMAgJuTJyickAk00lK+qqGmGoqSzIiz/ftaUIytf1r6AFeF+gtVWq/1Y3HgUyk9tfe20tyiQa8GOtB+dea/hHUDT5c93PRyvGUfqaMYef9C9FqmfmCUiGAdfW4HtVlj6y0y82XKaLKjIyQOcYbyxxs=
+  secret_access_key: $AWS_SECRET_ACCESS_KEY
 env:
   global:
   - SURGE_LOGIN=andyfang.dz@gmail.com
