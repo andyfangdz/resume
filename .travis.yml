@@ -9,21 +9,21 @@ addons:
 cache:
   yarn: true
   directories:
-    - node_modules
+  - node_modules
 install:
 - export DISPLAY=':99.0'
 - Xvfb :99 -screen 0 1024x768x24 > /dev/null 2>&1 &
 - yarn
 script: "./deploy.sh"
 deploy:
-  - provider: s3
-    access_key_id: AKIAIWZ7LCK2MGJNEIWA
-    bucket: s3.andyfang.me
-    skip_cleanup: true
-    local_dir: build
-    upload-dir: cv
-    secret_access_key:
-      secure: XAaXhmHN1dMnqNw991jmLNU+ZVhHg4xRZUoujEcjeHIC/egiSFIybqTXJjoyCOEYBu098dXWt/tfIB+kF4tHSsAzRhxujgG2/GGtuBGI9bWbAtKzb7wp1aoCJlPHXOqL3GhiLzDtqAxMjR1nhUF0Gq3Ol4K9GuP1tfLACg+FTjQzhmBBNl5Sbv0nudF9Rs05ouoyz60WC1UR3ci0l73NAm4QBxgJMlWbXMR6oQgBVLuspv9cm+hY9Bj4dbl33toAZ5Q3tvDM1vm6BfjqM2hXydDfeVRHbNcpP8MVXIDgBEvIm17vDdA93ol3Vlr2YXiKmPMI22PBpqt8vFC14HTNIWHg4FvWN0pEsx3ISOBpdpxRivBlUkbZXh+EVekZ5u9GYHVMBUbHAmQZjLpzrn1w+Iqy9KlWJhjQTtHbSaieIHRC+d1doxZTBwi3gSwYROy4PRoKQXknPWo7tzBdt+UWSsSK5d+OtQww81Lpj5CjDVYXCiJLqGk1oNx7P89GProzRlu1R5Dx8zkMQRN6l6ILCTyNVA++yaInRSoOlJ4ya8H1EaEstEd2BlDo2EbqBSMJPhCwTfD23ivocEPUypJ7fACtx6o9o89VM6+sBrAn3TN4NHN8KWJNHbKa68XoQ3MImhe57HByZtoyx5G1sp3fDMo5ceHfEzra2jAewbQflg4=
+  provider: s3
+  access_key_id: AKIAI3YF4WSCRVAJUY7Q
+  bucket: s3.andyfang.me
+  skip_cleanup: true
+  local_dir: build
+  upload-dir: cv
+  secret_access_key:
+    secure: fPOqI4+8In9SpIf7HpDqrlAvxIZCNPnxuy5B7A+ZKc/wHMgrh/zE5f4Ym0ovHrhKTmWBHvrqHAhzBQIQ0eWibEg9CUpNT+xouVA2/2/WpSjrsLVBmTyYDgRft5DgAkhBmYdF/BnlWExCAPJDBNyYFY3idKMQjcvxEuZ+D9suNrcRp4DYjdTDl36SwtydYH7r1jCnjXK9+bB62k6OojZHLqQoLnJTM7pmzi+Wy4Ec8yZKHbvo18k5SC7Xh10pjShbPM421EXZTmRNtljro7qT4qo6W+nBG/GgoResLMvkikMRRdjRDlsV9d1FOXWChJC6+Y8cVHXZpvq+7NxbgX6PCfczB1WxmF3im7ycnomhQZXufzwQfPTjSSykZtEz84GeU61/nmi7F95TJsoijr4ha8HGSpBtWJJVLe+K4mWalmyBqvG13z7w2UiZZMPu9P/FRbeG39ldLF9ka2MURlEE5P3zPEJF/TFyHMkJrJGLNHtXOjsyjmtXS+FUi3zkthYZDSTknvfKDBVZYKqGIXapIyMAgJuTJyickAk00lK+qqGmGoqSzIiz/ftaUIytf1r6AFeF+gtVWq/1Y3HgUyk9tfe20tyiQa8GOtB+dea/hHUDT5c93PRyvGUfqaMYef9C9FqmfmCUiGAdfW4HtVlj6y0y82XKaLKjIyQOcYbyxxs=
 env:
   global:
   - SURGE_LOGIN=andyfang.dz@gmail.com
