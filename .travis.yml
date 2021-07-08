@@ -22,6 +22,7 @@ deploy:
   skip_cleanup: true
   local_dir: build
   upload-dir: cv
+  detect_encoding: true
   secret_access_key: $AWS_SECRET_ACCESS_KEY
 env:
   global:

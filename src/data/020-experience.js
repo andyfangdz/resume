@@ -18,7 +18,7 @@ export default [
     ],
     notes: `
 Cloud Infrastructure, Production Platform. Select projects include:
-- Maintained Airbnb's distributed job queueing system built on top of AWS SQS and DynamoDB. 
+- Designed and led the build-out of Airbnb's distributed, delayed job scheduling and queueing system on top of AWS SQS and DynamoDB. 
   - Read more about this work on Airbnb Engineering Blog: <https://medium.com/p/93ab10f05f99>.
   - Led an intern as intern manager during Summer 2019 for this work.
 - Designed and implemented multi-cluster architecture for Airbnb's Kafka clusters,
