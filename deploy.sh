@@ -11,4 +11,5 @@ done
 
 node render.js
 rm build/index.html
+tree build
 trap 'kill $(jobs -pr)' SIGINT SIGTERM EXIT
