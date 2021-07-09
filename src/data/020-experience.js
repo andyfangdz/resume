@@ -12,10 +12,10 @@ export default [
     notes: `
 Enterprise Data Platform, responsible for providing timely and reliable access to fundamental reference datasets at Citadel.
 Example projects include:
-- Design and lead the implementation of observability stack to enable consistent monitoring of service performance and health.
+- Designed and led the implementation of observability stack to enable consistent monitoring of service performance and health.
   - e.g., integration of distrubuted tracing, unified metrics, dashboard, and alerting into several legacy systems.
 - Designed and built tooling for organization-wide Kubernetes deployments.
-- Lead build-out of firm-wide, Spinnaker-based continuous deployment system for both Kubernetes and legacy filer deployments.
+- Designed and led build-out of firm-wide, Spinnaker-based continuous deployment system for both Kubernetes and legacy filer deployments.
 - Modernization of build system for large-scale C++ (migration to Bazel) and Java (multi-project Gradle monorepo builds) services.
 - Performance and memory usage optimization for large-scale C++ services, such as identifying memory fragmentation in glibc \`malloc()\`.
     `,
