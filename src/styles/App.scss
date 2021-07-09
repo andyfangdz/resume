@@ -262,6 +262,9 @@ section .skill-item > p {
   html {
     margin: 0;
     padding: 0;
+  }
+
+  html.resume {
     height: $paper-height;
     overflow: hidden;
   }
@@ -269,6 +272,9 @@ section .skill-item > p {
   body {
     margin: 0;
     padding: 0;
+  }
+
+  body.resume {
     height: $paper-height;
     overflow: hidden;
   }
