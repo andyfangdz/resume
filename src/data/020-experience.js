@@ -31,7 +31,7 @@ Example projects include:
     dates: [
       {
         startDate: 'May, 2018',
-        endDate: 'Jun,, 2020',
+        endDate: 'Jun., 2020',
         note: 'full-time',
       },
       {
