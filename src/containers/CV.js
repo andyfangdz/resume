@@ -43,7 +43,7 @@ function DesktopOrMobile({ mobile, desktop }) {
 class CV extends Component {
   selectify = (title) => {
     if (appState.cv.featured) {
-      return `Selected ${title}`;
+      return `${title}`;
     }
     return title;
   };

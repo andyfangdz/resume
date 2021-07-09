@@ -19,11 +19,11 @@ body {
 .cv-page {
   background: white;
   display: block;
-  margin: 0.5cm auto 0.5cm;
+  margin: 0.4cm auto 0.4cm;
   box-shadow: 0 1px 0 0 #ffffff inset, 0 1px 2px 0 #b3b3b3;
   max-width: $paper-width;
   box-sizing: border-box;
-  padding: 0.5cm;
+  padding: 0.4cm;
 }
 
 .cv-page.resume {
@@ -78,7 +78,7 @@ body {
 
 .item {
   position: relative;
-  margin-top: 0.25em;
+  margin-top: 0.2em;
   padding-left: $item-horizontal-padding;
   padding-right: $item-horizontal-padding;
 }
@@ -259,9 +259,18 @@ section .skill-item > p {
 }
 
 @media print {
+  html {
+    margin: 0;
+    padding: 0;
+    height: $paper-height;
+    overflow: hidden;
+  }
+
   body {
     margin: 0;
     padding: 0;
+    height: $paper-height;
+    overflow: hidden;
   }
 
   .cv-page {

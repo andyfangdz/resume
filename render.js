@@ -13,14 +13,14 @@ nightmare
   .goto('http://localhost:9000/cv', pdfOptions)
   .wait(1000)
   .pdf('build/cv.pdf')
-  .evaluate(function() {
+  .evaluate(function () {
     return document.getElementsByTagName('html')[0].innerHTML;
   })
-  .then(function(html) {
+  .then(function (html) {
     fs.writeFileSync('build/200.html', html);
     console.log('Nightmare built.');
     return nightmare.end();
   })
-  .catch(function(error) {
+  .catch(function (error) {
     console.error('Failed:', error);
   });

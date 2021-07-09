@@ -1,24 +1,46 @@
 export default [
   {
+    title: 'Software Engineer',
+    company: 'Citadel',
+    companyLink: 'https://www.citadel.com',
+    location: 'New York, NY',
+    dates: [
+      {
+        startDate: 'Jun., 2020',
+      },
+    ],
+    notes: `
+Enterprise Data Platform, responsible for providing timely and reliable access to fundamental reference datasets at Citadel.
+Example projects include:
+- Design and lead the implementation of observability stack to enable consistent monitoring of service performance and health.
+  - e.g., integration of distrubuted tracing, unified metrics, dashboard, and alerting into several legacy systems.
+- Designed and built tooling for organization-wide Kubernetes deployments.
+- Lead build-out of firm-wide, Spinnaker-based continuous deployment system for both Kubernetes and legacy filer deployments.
+- Modernization of build system for large-scale C++ (migration to Bazel) and Java (multi-project Gradle monorepo builds) services.
+- Performance and memory usage optimization for large-scale C++ services, such as identifying memory fragmentation in glibc \`malloc()\`.
+    `,
+    featured: true,
+  },
+  {
     title: 'Software Development Engineer',
     company: 'Airbnb',
     companyLink: 'https://www.airbnb.com/',
     location: 'San Francisco, CA',
     dates: [
       {
+        startDate: 'May, 2018',
+        endDate: 'Jun,, 2020',
+        note: 'full-time',
+      },
+      {
         startDate: 'May, 2017',
         endDate: 'Aug., 2017',
         note: 'intern',
       },
-      {
-        startDate: 'May, 2018',
-        endDate: 'June, 2020',
-        note: 'full-time',
-      },
     ],
     notes: `
 Cloud Infrastructure, Production Platform. Select projects include:
-- Designed and led the build-out of Airbnb's distributed, delayed job scheduling and queueing system on top of AWS SQS and DynamoDB. 
+- Designed and led the build-out of Airbnb's distributed, delayed job scheduling and queueing system on top of AWS SQS and DynamoDB.
   - Read more about this work on Airbnb Engineering Blog: <https://medium.com/p/93ab10f05f99>.
   - Led an intern as intern manager during Summer 2019 for this work.
 - Designed and implemented multi-cluster architecture for Airbnb's Kafka clusters,
@@ -46,7 +68,7 @@ Cloud Infrastructure, Production Platform. Select projects include:
       },
     ],
     notes: `
-Research in data mining with professor [Polo Chau](https://poloclub.github.io/polochau/).
+Research in the cross-section of data mining and human-computer interaction with professor [Polo Chau](https://poloclub.github.io/polochau/).
 
 - One of the investigators in NIH's [MD2K](https://md2k.org/) (**M**obile **D**ata **to** **K**nowledge) initiative.
   Developed a predictive visualization dashboard for exploring correlations between activity, stress, and smoking relapses.

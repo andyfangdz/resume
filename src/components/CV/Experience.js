@@ -13,7 +13,11 @@ export default class Experience extends Component {
           (endDate ? endDate : 'current') +
           (note ? ` (${note})` : '')
       )
-      .join(', ');
+      .map((dateStr) => <span>{dateStr}</span>)
+      .reduce(
+        (acc, date) => (acc.length ? [...acc, <br />, date] : [date]),
+        []
+      );
 
   render() {
     return (
