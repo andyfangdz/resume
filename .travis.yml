@@ -1,6 +1,8 @@
 language: node_js
 dist: focal
 virt: lxd
+os: linux
+arch: arm64-graviton2
 node_js:
   - 14
 addons:
