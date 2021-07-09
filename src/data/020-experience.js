@@ -12,12 +12,14 @@ export default [
     notes: `
 Enterprise Data Platform, responsible for providing timely and reliable access to fundamental reference datasets at Citadel.
 Example projects include:
-- Designed and led the implementation of observability stack to enable consistent monitoring of service performance and health.
-  - e.g., integration of distrubuted tracing, unified metrics, dashboard, and alerting into several legacy systems.
-- Designed and built tooling for organization-wide Kubernetes deployments.
+- Architected and led the implementation of observability stack to enable consistent monitoring of service performance and health.
+  - e.g., integration of distributed tracing, unified metrics, dashboard, and alerting into several legacy systems.
+- Designed and built organization-wide Kubernetes deployments tooling and best practices.
 - Designed and led build-out of firm-wide, Spinnaker-based continuous deployment system for both Kubernetes and legacy filer deployments.
 - Modernization of build system for large-scale C++ (migration to Bazel) and Java (multi-project Gradle monorepo builds) services.
-- Performance and memory usage optimization for large-scale C++ services, such as identifying memory fragmentation in glibc \`malloc()\`.
+- Performance and memory usage optimization for large-scale C++ services,
+  such as identifying memory fragmentation in glibc \`malloc()\`,
+  which resulted in dramatic decrease in OOM and more than 75% memory usage reduction for a critical production service.
     `,
     featured: true,
   },
@@ -75,7 +77,7 @@ Research in the cross-section of data mining and human-computer interaction with
   [Paper](https://s3.andyfang.me/papers/17-ubicomp-dashboard.pdf).
 - MMap: Scaling up scientific computation with memory mapping.
   [Paper](https://s3.andyfang.me/papers/16-mmap-ml-sigmod.pdf).
-- ARGO: Billion-scale visualization of network data.
+  ARGO: Billion-scale visualization of network data.
   [Paper](https://s3.andyfang.me/papers/17-carina-www.pdf).
 `,
     featured: true,
