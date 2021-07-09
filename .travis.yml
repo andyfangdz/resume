@@ -1,5 +1,6 @@
 language: node_js
-dist: trusty
+dist: focal
+virt: lxd
 node_js:
   - 14
 addons:
