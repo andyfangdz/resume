@@ -8,7 +8,6 @@ addons:
     packages:
       - xvfb
 cache:
-  npm: false
   directories:
     - ./.yarn/cache
 before_install:
