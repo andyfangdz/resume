@@ -46,17 +46,15 @@ function CV() {
     return title;
   };
 
-  useEffect(
-    () => {
-      if (appState.cv.featured) {
-        document.body.classList.add('resume');
-        document.documentElement.classList.add('resume');
-      } else {
-        document.body.classList.remove('resume');
-        document.documentElement.classList.add('resume');
-      }
+  useEffect(() => {
+    if (appState.cv.featured) {
+      document.body.classList.add('resume');
+      document.documentElement.classList.add('resume');
+    } else {
+      document.body.classList.remove('resume');
+      document.documentElement.classList.add('resume');
     }
-  )
+  });
   return (
     <main>
       <aside className="toolbar">
@@ -97,9 +95,7 @@ function CV() {
           {getListOf(Experience, cvData.experience, appState.cv.featured)}
         </section>
         <section className="publication" id="tech-publications">
-          <SectionHeader
-            title={selectify('Non Academic Publications')}
-          />
+          <SectionHeader title={selectify('Non Academic Publications')} />
           {getListOf(
             Publication,
             cvData.nonAcademicPublications,

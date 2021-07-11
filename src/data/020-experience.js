@@ -10,14 +10,16 @@ export default [
       },
     ],
     notes: `
-Enterprise Data Platform, responsible for providing timely and reliable access to fundamental reference datasets at Citadel.
-Example projects include:
+Enterprise Data Platform. 
+Technical lead of trading-critical [security master](https://web.archive.org/web/20210711202912/https://www.advanti.io/blog/what-is-a-security-master), 
+providing timely and reliable access to fundamental reference datasets at Citadel.
 - Architected and led the implementation of observability stack to enable consistent monitoring of service performance and health.
-  - e.g., integration of distributed tracing, unified metrics, dashboard, and alerting into several legacy systems.
+  - Integrated distributed tracing, unified metrics, dashboard, and alerting into several key systems.
+    Set widely-adopted observability strategies.
 - Designed and built organization-wide Kubernetes deployments tooling and best practices.
-- Designed and led build-out of firm-wide, Spinnaker-based continuous deployment system for both Kubernetes and legacy filer deployments.
-- Modernization of build system for large-scale C++ (migration to Bazel) and Java (multi-project Gradle monorepo builds) services.
-- Performance and memory usage optimization for large-scale C++ services,
+- Designed and led build-out of firm-wide, Spinnaker-based continuous deployment system for both Kubernetes and legacy NFS deployments.
+- Modernized of build system for large-scale C++ (migration to Bazel) and Java (multi-project Gradle monorepo builds) services.
+- Optimized performance and memory usage for large-scale C++ services,
   such as identifying memory fragmentation in glibc \`malloc()\`,
   which resulted in dramatic decrease in OOM and more than 75% memory usage reduction for a critical production service.
     `,
@@ -43,7 +45,7 @@ Example projects include:
     notes: `
 Cloud Infrastructure, Production Platform. Select projects include:
 - Designed and led the build-out of Airbnb's distributed, delayed job scheduling and queueing system on top of AWS SQS and DynamoDB.
-  - Read more about this work on Airbnb Engineering Blog: <https://medium.com/p/93ab10f05f99>.
+  - Read more about this work on Airbnb Engineering Blog: [medium.com/p/93ab10f05f99](https://medium.com/p/93ab10f05f99).
   - Led an intern as intern manager during Summer 2019 for this work.
 - Designed and implemented multi-cluster architecture for Airbnb's Kafka clusters,
   including a metadata proxy that multiplexes Kafka requests based on the Kafka TCP protocol.

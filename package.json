@@ -33,6 +33,7 @@
     "analyze:explore": "source-map-explorer build/static/js/*",
     "build": "react-scripts build",
     "eject": "react-scripts eject",
+    "prettier": "prettier -w .",
     "start": "react-scripts start",
     "test": "react-scripts test --env=jsdom",
     "render": "npm-run-all build render:pre-render",

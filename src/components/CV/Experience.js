@@ -15,7 +15,8 @@ export default class Experience extends Component {
       )
       .map((dateStr, idx) => <span key={`span-${idx}`}>{dateStr}</span>)
       .reduce(
-        (acc, date, idx) => (acc.length ? [...acc, <br key={`br-${idx}`} />, date] : [date]),
+        (acc, date, idx) =>
+          acc.length ? [...acc, <br key={`br-${idx}`} />, date] : [date],
         []
       );
 
