@@ -2,7 +2,7 @@
 src/styles/App.css
 .vscode/chrome
 .idea/
-
+.yarn
 # dependencies
 node_modules
 
