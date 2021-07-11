@@ -1,5 +1,5 @@
 language: node_js
-dist: trusty
+dist: focal
 os: linux
 node_js:
   - 14
@@ -15,7 +15,7 @@ install:
   - export DISPLAY=':99.0'
   - Xvfb :99 -screen 0 1024x768x24 > /dev/null 2>&1 &
   - yarn
-script: './deploy.sh'
+script: 'yarn render'
 deploy:
   provider: s3
   access_key_id: $AWS_ACCESS_KEY_ID

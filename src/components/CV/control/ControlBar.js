@@ -61,7 +61,7 @@ class ControlBar extends Component {
           color="primary"
           onClick={() => {
             window.open(
-              `/${appState.cv.featured ? 'resume.pdf' : 'cv.pdf'}`,
+              `/${appState.cv.featured ? 'andy-fang-resume.pdf' : 'andy-fang-cv.pdf'}`,
               '_blank'
             );
           }}
