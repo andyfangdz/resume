@@ -6,7 +6,7 @@ export default [
     location: 'New York, NY',
     dates: [
       {
-        startDate: 'Jun., 2020',
+        startDate: 'Jun. 1, 2020',
       },
     ],
     notes: `
@@ -32,13 +32,13 @@ providing timely and reliable access to fundamental reference datasets at Citade
     location: 'San Francisco, CA',
     dates: [
       {
-        startDate: 'May, 2018',
-        endDate: 'Jun., 2020',
+        startDate: 'May 15, 2018',
+        endDate: 'May 23, 2020',
         note: 'full-time',
       },
       {
-        startDate: 'May, 2017',
-        endDate: 'Aug., 2017',
+        startDate: 'May 15, 2017',
+        endDate: 'Aug. 5, 2017',
         note: 'intern',
       },
     ],
