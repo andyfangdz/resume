@@ -8,7 +8,7 @@ export default [
     startDate: 'Aug. 2015',
     endDate: 'May. 2018',
     isCurrent: false,
-    notes: `Major in Computer Science, Information Network & Intelligence. GPA: 3.51/4.0.`,
+    notes: `Major in Computer Science, Information Network & Intelligence. GPA: 3.54/4.0.`,
     featured: true,
   },
 ];
