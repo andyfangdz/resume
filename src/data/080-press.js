@@ -6,7 +6,7 @@ export default [
     title:
       'Georgia Tech to Participate for the First Time in Supercomputing Student Cluster Competition',
     publisher: 'The Compiler (Georgia Tech College of Computing)',
-    link: 'https://www.cc.gatech.edu/news/597895/georgia-tech-participate-first-time-supercomputing-student-cluster-competition',
+    link: 'https://web.archive.org/web/20180727140655/https://www.cc.gatech.edu/news/597895/georgia-tech-participate-first-time-supercomputing-student-cluster-competition',
     date: 'Oct. 2017',
     quote: `
 > While these students are still in their undergrad, the training and education they have received in preparation for this competition expands well beyond HPC and produces an educational foundation they will continue using for years to come.
