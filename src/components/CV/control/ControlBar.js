@@ -61,10 +61,10 @@ class ControlBar extends Component {
           color="primary"
           onClick={() => {
             window.open(
-              `/${
+              `${
                 appState.cv.featured
-                  ? 'andy-fang-resume.pdf'
-                  : 'andy-fang-cv.pdf'
+                  ? 'https://s3.andyfang.me/cv/andy-fang-resume.pdf'
+                  : 'https://s3.andyfang.me/cv/andy-fang-cv.pdf'
               }`,
               '_blank'
             );
