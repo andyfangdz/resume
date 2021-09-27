@@ -87,7 +87,7 @@ Research in the cross-section of data mining and human-computer interaction with
   {
     title: 'STAR Intern on Software Engineering',
     company: 'Symantec Corporation',
-    companyLink: 'https://www.symantec.com/theme/star',
+    companyLink: 'https://web.archive.org/web/20180315052311/https://www.symantec.com/theme/star',
     location: 'Los Angeles, CA',
     dates: [
       {
