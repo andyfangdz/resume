@@ -4,11 +4,12 @@
   "private": true,
   "devDependencies": {
     "@andyfangdz/prettierrc": "^7.0",
-    "nightmare": "^3.0",
+    "get-port": "^5.1.1",
+    "html-minifier-terser": "^5.1.1",
     "node-sass": "^6.0.1",
     "npm-run-all": "^4.1",
     "prettier": "^2.3.2",
-    "serve": "^12.0.0",
+    "serve-handler": "^6.1.3",
     "source-map-explorer": "^2.5.2"
   },
   "dependencies": {
@@ -17,28 +18,35 @@
     "autotrack": "^2.4",
     "classnames": "^2.3.1",
     "fontfaceobserver": "^2.1",
-    "history": "^4.0.0",
+    "history": "^5.0.0",
     "mobx": "^6.3.2",
     "mobx-react": "^7.2.0",
+    "puppeteer": "^10.1.0",
     "react": "^17.0.2",
     "react-dom": "^17.0.2",
     "react-markdown": "^6.0.2",
     "react-scripts": "^4.0.3",
-    "react-tap-event-plugin": "^3.0",
     "route-parser": "^0.0.5"
   },
   "scripts": {
     "analyze": "npm-run-all build analyze:explore",
     "analyze:explore": "source-map-explorer build/static/js/*",
-    "start": "react-scripts start",
     "build": "react-scripts build",
+    "eject": "react-scripts eject",
+    "prettier": "prettier -w .",
+    "start": "react-scripts start",
     "test": "react-scripts test --env=jsdom",
-    "eject": "react-scripts eject"
+    "render": "npm-run-all build render:pre-render",
+    "render:pre-render": "node render.js"
   },
   "browserslist": [
     ">0.2%",
     "not dead",
     "not ie <= 11",
     "not op_mini all"
-  ]
+  ],
+  "volta": {
+    "node": "14.17.3",
+    "yarn": "1.22.10"
+  }
 }

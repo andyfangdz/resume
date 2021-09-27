@@ -3,6 +3,15 @@ src/styles/App.css
 .vscode/chrome
 .idea/
 
+# yarn
+.yarn/*
+!.yarn/patches
+!.yarn/releases
+!.yarn/plugins
+!.yarn/sdks
+!.yarn/versions
+.pnp.*
+
 # dependencies
 node_modules
 

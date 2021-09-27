@@ -26,7 +26,7 @@ to receive the award, recognizing their involvement in undergraduate research.
     title: 'Material, Supplies and Technology Grants (MS&T)',
     awardedBy: 'Georgia Institute of Technology',
     notes: `
-Supported by MS&T grants for resesarch in Visualization and Virtual Reality
+Supported by MS&T grants for research in Visualization and Virtual Reality
 during Summer 2017. $1,000.
 `,
     date: 'May. - Aug. 2017',

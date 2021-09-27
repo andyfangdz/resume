@@ -1,4 +1,4 @@
-import React, { Component } from 'react';
+import React, { useEffect } from 'react';
 import { observer } from 'mobx-react';
 
 import appState from '../store/appState';
@@ -16,8 +16,6 @@ import Project from '../components/CV/Project';
 import SkillGroup from '../components/CV/SkillGroup';
 import cvData from '../data';
 import classNames from 'classnames';
-
-import belo from '../airbnb-belo.svg';
 
 import '../styles/App.scss';
 import '../styles/markdown-github.css';
@@ -40,103 +38,108 @@ function DesktopOrMobile({ mobile, desktop }) {
   ];
 }
 
-class CV extends Component {
-  selectify = (title) => {
+function CV() {
+  const selectify = (title) => {
     if (appState.cv.featured) {
-      return `Selected ${title}`;
+      return `${title}`;
     }
     return title;
   };
 
-  render() {
-    return (
-      <main>
-        <aside className="toolbar">
-          <ControlBar />
-        </aside>
-        <article
-          className={classNames(
-            'cv-page',
-            {
-              resume: this.props.featured,
-              'font-loaded': appState.cv.fontLoaded,
-            },
-            'markdown-body'
+  useEffect(() => {
+    if (appState.cv.featured) {
+      document.body.classList.add('resume');
+      document.documentElement.classList.add('resume');
+    } else {
+      document.body.classList.remove('resume');
+      document.documentElement.classList.add('resume');
+    }
+  });
+  return (
+    <main>
+      <aside className="toolbar">
+        <ControlBar />
+      </aside>
+      <article
+        className={classNames(
+          'cv-page',
+          {
+            resume: appState.cv.featured,
+            'font-loaded': appState.cv.fontLoaded,
+          },
+          'markdown-body'
+        )}
+      >
+        <header>
+          <div>
+            <h1>{cvData.info.fullName}</h1>
+            <p className="info">
+              {cvData.info.phone}
+              <DesktopOrMobile mobile={<br />} desktop={' · '} />
+              <a href={`mailto:${cvData.info.email}`}>{cvData.info.email}</a>
+              <DesktopOrMobile mobile={<br />} desktop={' · '} />
+              {cvData.info.location}
+              <br />
+              Full CV: <a href={cvData.info.website}>{cvData.info.website}</a>
+              <DesktopOrMobile mobile={<br />} desktop={' · '} />
+              {cvData.info.position}
+            </p>
+          </div>
+        </header>
+        <section className="education" id="education">
+          <SectionHeader title="Education" />
+          {getListOf(Education, cvData.education, appState.cv.featured)}
+        </section>
+        <section className="experience" id="experience">
+          <SectionHeader title={selectify('Experience')} />
+          {getListOf(Experience, cvData.experience, appState.cv.featured)}
+        </section>
+        <section className="publication" id="tech-publications">
+          <SectionHeader title={selectify('Non Academic Publications')} />
+          {getListOf(
+            Publication,
+            cvData.nonAcademicPublications,
+            appState.cv.featured
           )}
-        >
-          <header>
-            <div>
-              <h1>{cvData.info.fullName}</h1>
-              <p className="info">
-                {cvData.info.phone}
-                <DesktopOrMobile mobile={<br />} desktop={' · '} />
-                <a href={`mailto:${cvData.info.email}`}>{cvData.info.email}</a>
-                <DesktopOrMobile mobile={<br />} desktop={' · '} />
-                {cvData.info.location}
-                <br />
-                Full CV: <a href={cvData.info.website}>{cvData.info.website}</a>
-                <DesktopOrMobile mobile={<br />} desktop={' · '} />
-                {cvData.info.position}
-              </p>
-            </div>
-          </header>
-          <section className="education" id="education">
-            <SectionHeader title="Education" />
-            {getListOf(Education, cvData.education, appState.cv.featured)}
+        </section>
+        <section className="publication" id="publications">
+          <SectionHeader title={selectify('Academic Publications')} />
+          {getListOf(Publication, cvData.publications, appState.cv.featured)}
+        </section>
+        <section className="award" id="awards">
+          <SectionHeader title={selectify('Awards')} />
+          {getListOf(Award, cvData.awards, appState.cv.featured)}
+        </section>
+        {!appState.cv.featured && (
+          <section className="press" id="press">
+            <SectionHeader title="Press Coverage" />
+            {getListOf(Press, cvData.press, appState.cv.featured)}
           </section>
-          <section className="experience" id="experience">
-            <SectionHeader title={this.selectify('Experience')} />
-            {getListOf(Experience, cvData.experience, appState.cv.featured)}
-          </section>
-          <section className="publication" id="tech-publications">
-            <SectionHeader
-              title={this.selectify('Non Academic Publications')}
-            />
+        )}
+        {!appState.cv.featured && (
+          <section className="award" id="tech-awards">
+            <SectionHeader title="Competitions & Hackathons" />
             {getListOf(
-              Publication,
-              cvData.nonAcademicPublications,
+              CompetitionAward,
+              cvData.competitionAwards,
               appState.cv.featured
             )}
           </section>
-          <section className="publication" id="publications">
-            <SectionHeader title={this.selectify('Academic Publications')} />
-            {getListOf(Publication, cvData.publications, appState.cv.featured)}
+        )}
+        {!appState.cv.featured && (
+          <section className="project" id="projects">
+            <SectionHeader title={selectify('Projects')} />
+            {getListOf(Project, cvData.projects, appState.cv.featured)}
           </section>
-          <section className="award" id="awards">
-            <SectionHeader title={this.selectify('Awards')} />
-            {getListOf(Award, cvData.awards, appState.cv.featured)}
-          </section>
-          {!appState.cv.featured && (
-            <section className="press" id="press">
-              <SectionHeader title="Press Coverage" />
-              {getListOf(Press, cvData.press, appState.cv.featured)}
-            </section>
-          )}
-          {!appState.cv.featured && (
-            <section className="award" id="tech-awards">
-              <SectionHeader title="Competitions & Hackathons" />
-              {getListOf(
-                CompetitionAward,
-                cvData.competitionAwards,
-                appState.cv.featured
-              )}
-            </section>
-          )}
-          {!appState.cv.featured && (
-            <section className="project" id="projects">
-              <SectionHeader title={this.selectify('Projects')} />
-              {getListOf(Project, cvData.projects, appState.cv.featured)}
-            </section>
-          )}
-          <section className="skill" id="skills">
-            <SectionHeader title="Skills" />
-            {getListOf(SkillGroup, cvData.skills, false)}
-          </section>
-          <footer />
-        </article>
-      </main>
-    );
-  }
+        )}
+        <section className="skill" id="skills">
+          <SectionHeader title="Skills" />
+          {getListOf(SkillGroup, cvData.skills, false)}
+        </section>
+        <footer />
+      </article>
+    </main>
+  );
 }
 
 CV.defaultProps = { featured: false };

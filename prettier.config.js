@@ -1,1 +1,1 @@
-module.exports = require('@andyfangdz/prettierrc')
+module.exports = require('@andyfangdz/prettierrc');
