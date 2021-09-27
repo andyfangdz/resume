@@ -10,8 +10,8 @@ export default [
       },
     ],
     notes: `
-Enterprise Data Platform. 
-Technical lead of trading-critical [security master](https://web.archive.org/web/20210711202912/https://www.advanti.io/blog/what-is-a-security-master), 
+Enterprise Data Platform.
+Technical lead of trading-critical [security master](https://web.archive.org/web/20210711202912/https://www.advanti.io/blog/what-is-a-security-master),
 providing timely and reliable access to fundamental reference datasets at Citadel.
 - Architected and led the implementation of observability stack to enable consistent monitoring of service performance and health.
   - Integrated distributed tracing, unified metrics, dashboard, and alerting into several key systems.
@@ -101,45 +101,6 @@ Utilizing data mining (with Hadoop and Python) to improve malware detection effi
 - Inferring unknown files' reputations with parent file and execution environment features.
 - Deployed new rule in Symantec's AV Engine with a false positive rate of only 0.2%. Used in Norton Security and Symantec Endpoint Protection.
 - Implemented a decision tree executor for detecting malware using file features that replaced Symantec's existing implementation.
-`,
-    featured: false,
-  },
-  {
-    title: 'Technical Lead',
-    company: 'Lanzhong Inc.',
-    companyLink: 'http://www.codevs.cn/',
-    location: 'Beijing, China',
-    dates: [
-      {
-        startDate: 'Jan. 2014',
-        endDate: 'Aug. 2015',
-      },
-    ],
-    notes: `
-Technical lead in an online education startup.
-
-- Lead developer of a CMS for online education.
-- Built email marketing system sending 100k+ emails per month.
-- Maintained and updated internal infrastructure across multiple applications and distributed services including celery and memcached.
-`,
-    featured: false,
-  },
-  {
-    title: 'Software Engineer',
-    company: 'InitialView',
-    companyLink: 'http://initialview.com',
-    location: 'Beijing, China',
-    dates: [
-      {
-        startDate: 'Dec. 2014',
-        endDate: 'Aug. 2015',
-      },
-    ],
-    notes: `
-Full-stack software engineer
-- Sole developer of claryfy.com, a web forum for international students built with Django and PostgreSQL
-- Built front-end of InitialView's Interview Booking System
-- Built front-end of InitialView Interview Player
 `,
     featured: false,
   },
