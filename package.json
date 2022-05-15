@@ -46,6 +46,9 @@
     "not op_mini all"
   ],
   "volta": {
-    "node": "16.15.0"
+    "node": "16"
+  },
+  "engines": {
+    "node": "16"
   }
 }
