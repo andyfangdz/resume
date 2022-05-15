@@ -1,9 +1,9 @@
-const fs = require('fs/promises');
-const getPort = require('get-port');
-const handler = require('serve-handler');
-const http = require('http');
-const puppeteer = require('puppeteer');
-const minify = require('html-minifier-terser').minify;
+import fs from 'fs/promises';
+import getPort from 'get-port';
+import handler from 'serve-handler';
+import http from 'http';
+import puppeteer from 'puppeteer';
+import {minify} from 'html-minifier-terser';
 
 const server = http.createServer((request, response) => {
   return handler(request, response, {
@@ -44,7 +44,7 @@ const server = http.createServer((request, response) => {
 
   await fs.writeFile(
     'build/200.html',
-    minify(await page.content(), {
+    await minify(await page.content(), {
       minifyCSS: true,
       minifyJS: true,
       minifyURLs: true,
