@@ -74,7 +74,7 @@ Cloud Infrastructure, Production Platform. Select projects include:
     notes: `
 Research in the cross-section of data mining and human-computer interaction with professor [Polo Chau](https://poloclub.github.io/polochau/).
 
-- One of the investigators in NIH's [MD2K](https://md2k.org/) (**M**obile **D**ata **to** **K**nowledge) initiative.
+- One of the investigators in NIH's [MD2K](https://web.archive.org/web/20220512220051/https://md2k.org/) (**M**obile **D**ata **to** **K**nowledge) initiative.
   Developed a predictive visualization dashboard for exploring correlations between activity, stress, and smoking relapses.
   [Paper](https://s3.andyfang.me/papers/17-ubicomp-dashboard.pdf).
 - MMap: Scaling up scientific computation with memory mapping.
