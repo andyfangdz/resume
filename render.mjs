@@ -3,7 +3,7 @@ import getPort from 'get-port';
 import handler from 'serve-handler';
 import http from 'http';
 import puppeteer from 'puppeteer';
-import {minify} from 'html-minifier-terser';
+import { minify } from 'html-minifier-terser';
 
 const server = http.createServer((request, response) => {
   return handler(request, response, {
