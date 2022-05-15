@@ -9,18 +9,12 @@ addons:
       - xvfb
 cache:
   directories:
-    - ./.yarn/cache
-before_cache:
-  - rm -f ./node_modules/.cache/.eslintcache
-before_install:
-  - curl -o- -L https://yarnpkg.com/install.sh | bash
-  - export PATH="$HOME/.yarn/bin:$PATH"
-  - yarn -v
+    - ./node_modules
 install:
   - export DISPLAY=':99.0'
   - Xvfb :99 -screen 0 1024x768x24 > /dev/null 2>&1 &
-  - yarn
-script: 'yarn render'
+  - npm ci
+script: 'npm run render'
 deploy:
   provider: s3
   access_key_id: $AWS_ACCESS_KEY_ID
